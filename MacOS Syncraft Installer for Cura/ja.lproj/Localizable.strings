@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  MacOS Syncraft Installer for Cura
+
+  Created by Rafael Neuwirth Swierczynski on 30/08/23.
+  
+*/
+
+"title" = "Cura 用 Syncraft インストーラー";
+
+"subtitle" = "Ultimaker Cura 用 Syncraft ファイル インストーラー";
+
+"enablediskperm" = "インストーラーが正しく動作するには、[プライバシーとセキュリティ] 設定でフル ディスク アクセスを必ず有効にしてください。";
+
+"chooseversion" = "Cura のバージョンを選択してください";
+
+"install" = "Syncraft ファイルを Cura にインストールする";
+
+"foldernotfound" = "Ultimaker Cura のインストール場所が見つかりませんでした。正しいバージョンを選択しているか、プログラムにディスク アクセス許可を与えているかを確認してください。";
+
+"pleaseselectversion" = "ファイルを適用するバージョンを選択してください。";
+
+"syncraftwebsite" = "公式ウェブサイト";
+
+"version" = "バージョン";
+
+"installproblem" = "インストールに問題がありました。";
+
+"done" = "終わり";

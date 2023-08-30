@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  MacOS Syncraft Installer for Cura
+
+  Created by Rafael Neuwirth Swierczynski on 30/08/23.
+  
+*/
+
+"title" = "Instalator Syncraft dla Cura";
+
+"subtitle" = "Instalator plików Syncraft dla Ultimaker Cura";
+
+"enablediskperm" = "Aby instalator działał poprawnie, pamiętaj o włączeniu pełnego dostępu\ndo dysku w ustawieniach prywatności i bezpieczeństwa macOS.";
+
+"chooseversion" = "Wybierz wersję Cura";
+
+"install" = "Zainstaluj pliki Syncraft na Cura";
+
+"foldernotfound" = "Nie znaleziono lokalizacji instalacji Ultimaker Cura. Sprawdź, czy wybrałeś właściwą wersję lub czy przyznałeś programowi uprawnienia dostępu do dysku.";
+
+"pleaseselectversion" = "Proszę wybrać wersję do której chcesz zastosować pliki.";
+
+"syncraftwebsite" = "Oficjalna Strona";
+
+"version" = "Wersja";
+
+"installproblem" = "Wystąpił problem z instalacją.";
+
+"done" = "Zrobione";
