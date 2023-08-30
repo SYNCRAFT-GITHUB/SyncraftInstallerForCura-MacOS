@@ -1,10 +1,3 @@
-//
-//  AlertMessages.swift
-//  MacOS Syncraft Installer for Cura
-//
-//  Created by Rafael Neuwirth Swierczynski on 30/08/23.
-//
-
 import Foundation
 import SwiftUI
 

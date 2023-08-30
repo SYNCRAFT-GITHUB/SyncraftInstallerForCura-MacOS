@@ -1,10 +1,3 @@
-//
-//  ApplySyncraft.swift
-//  MacOS Syncraft Installer for Cura
-//
-//  Created by Rafael Neuwirth Swierczynski on 28/08/23.
-//
-
 import Foundation
 import SwiftUI
 
