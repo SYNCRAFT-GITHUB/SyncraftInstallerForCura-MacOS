@@ -19,7 +19,7 @@ struct ContentView: View {
     
     func optionColor (_ version: String) -> Color {
         if selectedVersion.name == version {
-            return .cyan
+            return .teal
         } else {
             return .white
         }
@@ -39,14 +39,17 @@ struct ContentView: View {
                         .font(.system(size: 45))
                     
                     Text ("subtitle")
-                        .foregroundColor(.gray)
                     
                 }
                 .padding(.all)
                 
                 Text ("enablediskperm")
                     .multilineTextAlignment(.center)
-                    .foregroundColor(.gray)
+                    .font(.callout)
+                    .padding(.top)
+                
+                Text ("ifpermgranted")
+                    .multilineTextAlignment(.center)
                     .font(.callout)
                     .padding(.all)
                 

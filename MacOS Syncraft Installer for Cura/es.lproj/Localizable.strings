@@ -4,6 +4,8 @@
 
 "enablediskperm" = "Para que el instalador funcione correctamente, asegúrese de habilitar \"Acceso Total al Disco\"\n en la configuración de Privacidad y seguridad de macOS.";
 
+"ifpermgranted" = "Si el sistema ya requiere acceso de administrador para abrir el programa,\nno es necesario habilitar \"Acceso Total al Disco\".";
+
 "chooseversion" = "Elija una versión de Cura";
 
 "install" = "Instalar archivos Syncraft en Cura";

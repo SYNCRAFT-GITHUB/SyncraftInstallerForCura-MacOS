@@ -4,6 +4,8 @@
 
 "enablediskperm" = "Damit das Installationsprogramm ordnungsgemäß funktioniert, stellen Sie sicher, dass in den Datenschutz- und Sicherheitseinstellungen von macOS der vollständige Festplattenzugriff aktiviert ist.";
 
+"ifpermgranted" = "Wenn das System bereits Administratorzugriff zum Öffnen des Programms benötigt,\nist die Aktivierung des vollständigen Festplattenzugriffs nicht erforderlich.";
+
 "chooseversion" = "Wählen Sie eine Cura-Version";
 
 "install" = "Installieren Sie Syncraft-Dateien auf Cura";
