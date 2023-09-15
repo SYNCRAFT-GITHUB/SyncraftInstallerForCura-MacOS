@@ -8,9 +8,11 @@
 
 "chooseversion" = "Choose a Cura Version";
 
-"install" = "Install Syncraft files on Cura";
+"install" = "Install Syncraft files";
 
-"foldernotfound" = "The Install Location for Ultimaker Cura was not found, please check that you have selected the correct version, or that you have granted disk access permissions to the program.";
+"remove" = "Remove Syncraft files";
+
+"foldernotfound" = "The Location for Ultimaker Cura was not found, please check that you have selected the correct version, or that you have granted disk access permissions to the program.";
 
 "pleaseselectversion" = "Please select a version to which you want to apply the files.";
 
@@ -19,5 +21,7 @@
 "version" = "Version";
 
 "installproblem" = "There was a problem with the installation.";
+
+"removeproblem" = "There was a problem while uninstalling the files.";
 
 "done" = "Done";

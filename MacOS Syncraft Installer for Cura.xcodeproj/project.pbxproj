@@ -7,34 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5308C4552AB48FE900000328 /* NewFiles in Resources */ = {isa = PBXBuildFile; fileRef = 5308C4532AB48FE800000328 /* NewFiles */; };
+		5308C4562AB48FE900000328 /* OldFiles in Resources */ = {isa = PBXBuildFile; fileRef = 5308C4542AB48FE800000328 /* OldFiles */; };
 		533465482A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */; };
 		5334654A2A9D34240080CA30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465492A9D34240080CA30 /* ContentView.swift */; };
 		5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5334654B2A9D34250080CA30 /* Assets.xcassets */; };
 		5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5334654E2A9D34250080CA30 /* Preview Assets.xcassets */; };
-		5334655D2A9D34AA0080CA30 /* variants in Resources */ = {isa = PBXBuildFile; fileRef = 533465572A9D34A90080CA30 /* variants */; };
-		5334655E2A9D34AA0080CA30 /* meshes in Resources */ = {isa = PBXBuildFile; fileRef = 533465582A9D34A90080CA30 /* meshes */; };
-		5334655F2A9D34AA0080CA30 /* definitions in Resources */ = {isa = PBXBuildFile; fileRef = 533465592A9D34A90080CA30 /* definitions */; };
-		533465602A9D34AA0080CA30 /* extruders in Resources */ = {isa = PBXBuildFile; fileRef = 5334655A2A9D34A90080CA30 /* extruders */; };
-		533465612A9D34AA0080CA30 /* materials in Resources */ = {isa = PBXBuildFile; fileRef = 5334655B2A9D34A90080CA30 /* materials */; };
-		533465622A9D34AA0080CA30 /* quality in Resources */ = {isa = PBXBuildFile; fileRef = 5334655C2A9D34AA0080CA30 /* quality */; };
 		533465652A9D360D0080CA30 /* ApplySyncraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465642A9D360D0080CA30 /* ApplySyncraft.swift */; };
 		538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538873E72A9FB1A8009A8CCB /* Localizable.strings */; };
 		53C7CF0B2A9F974C008F840B /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CF0A2A9F974C008F840B /* AlertMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5308C4532AB48FE800000328 /* NewFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewFiles; sourceTree = "<group>"; };
+		5308C4542AB48FE800000328 /* OldFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OldFiles; sourceTree = "<group>"; };
 		533465442A9D34240080CA30 /* MacOS Syncraft Installer for Cura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacOS Syncraft Installer for Cura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_Syncraft_Installer_for_CuraApp.swift; sourceTree = "<group>"; };
 		533465492A9D34240080CA30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5334654B2A9D34250080CA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5334654E2A9D34250080CA30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		533465502A9D34250080CA30 /* MacOS_Syncraft_Installer_for_Cura.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_Syncraft_Installer_for_Cura.entitlements; sourceTree = "<group>"; };
-		533465572A9D34A90080CA30 /* variants */ = {isa = PBXFileReference; lastKnownFileType = folder; path = variants; sourceTree = "<group>"; };
-		533465582A9D34A90080CA30 /* meshes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = meshes; sourceTree = "<group>"; };
-		533465592A9D34A90080CA30 /* definitions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = definitions; sourceTree = "<group>"; };
-		5334655A2A9D34A90080CA30 /* extruders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = extruders; sourceTree = "<group>"; };
-		5334655B2A9D34A90080CA30 /* materials */ = {isa = PBXFileReference; lastKnownFileType = folder; path = materials; sourceTree = "<group>"; };
-		5334655C2A9D34AA0080CA30 /* quality */ = {isa = PBXFileReference; lastKnownFileType = folder; path = quality; sourceTree = "<group>"; };
 		533465642A9D360D0080CA30 /* ApplySyncraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySyncraft.swift; sourceTree = "<group>"; };
 		538873E62A9FB1A8009A8CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873E92A9FB1ED009A8CCB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -75,12 +67,13 @@
 		533465462A9D34240080CA30 /* MacOS Syncraft Installer for Cura */ = {
 			isa = PBXGroup;
 			children = (
+				5308C4532AB48FE800000328 /* NewFiles */,
+				5308C4542AB48FE800000328 /* OldFiles */,
 				533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */,
 				533465492A9D34240080CA30 /* ContentView.swift */,
 				53C7CF0A2A9F974C008F840B /* AlertMessages.swift */,
 				538873E72A9FB1A8009A8CCB /* Localizable.strings */,
 				533465632A9D35FC0080CA30 /* Scripts */,
-				533465562A9D347B0080CA30 /* Resources */,
 				5334654B2A9D34250080CA30 /* Assets.xcassets */,
 				533465502A9D34250080CA30 /* MacOS_Syncraft_Installer_for_Cura.entitlements */,
 				5334654D2A9D34250080CA30 /* Preview Content */,
@@ -94,19 +87,6 @@
 				5334654E2A9D34250080CA30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		533465562A9D347B0080CA30 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				533465592A9D34A90080CA30 /* definitions */,
-				5334655A2A9D34A90080CA30 /* extruders */,
-				5334655B2A9D34A90080CA30 /* materials */,
-				533465582A9D34A90080CA30 /* meshes */,
-				5334655C2A9D34AA0080CA30 /* quality */,
-				533465572A9D34A90080CA30 /* variants */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		533465632A9D35FC0080CA30 /* Scripts */ = {
@@ -180,15 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533465622A9D34AA0080CA30 /* quality in Resources */,
 				5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */,
-				533465602A9D34AA0080CA30 /* extruders in Resources */,
-				533465612A9D34AA0080CA30 /* materials in Resources */,
+				5308C4552AB48FE900000328 /* NewFiles in Resources */,
+				5308C4562AB48FE900000328 /* OldFiles in Resources */,
 				538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */,
-				5334655D2A9D34AA0080CA30 /* variants in Resources */,
-				5334655F2A9D34AA0080CA30 /* definitions in Resources */,
 				5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */,
-				5334655E2A9D34AA0080CA30 /* meshes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

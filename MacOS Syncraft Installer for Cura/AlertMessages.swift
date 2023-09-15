@@ -9,8 +9,10 @@ final class AlertMessages: ObservableObject {
     
     static let folderNotFound = LocalizedStringKey("foldernotfound")
     
-    static let selectAVersion = LocalizedStringKey("pleaseselectversion")
+    static let selectAVersion = LocalizedStringKey("chooseversion")
     
     static let installProblem = LocalizedStringKey("installproblem")
+    
+    static let removeProblem = LocalizedStringKey("removeproblem")
     
 }

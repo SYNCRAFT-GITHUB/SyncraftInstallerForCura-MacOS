@@ -8,7 +8,9 @@
 
 "chooseversion" = "Wählen Sie eine Cura-Version";
 
-"install" = "Installieren Sie Syncraft-Dateien auf Cura";
+"install" = "Dateien installieren";
+
+"remove" = "Entfernen Sie die Dateien";
 
 "foldernotfound" = "Der Installationsort für Ultimaker Cura wurde nicht gefunden. Bitte überprüfen Sie, ob Sie die richtige Version ausgewählt haben oder dem Programm Festplattenzugriffsberechtigungen erteilt haben.";
 
@@ -19,5 +21,7 @@
 "version" = "Ausführung";
 
 "installproblem" = "Bei der Installation ist ein Problem aufgetreten.";
+
+"removeproblem" = "Es liegt ein Problem bei der Deinstallation der Dateien vor.";
 
 "done" = "Erledigt";

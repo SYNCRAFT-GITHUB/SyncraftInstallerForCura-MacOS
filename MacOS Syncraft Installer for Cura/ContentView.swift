@@ -63,12 +63,22 @@ struct ContentView: View {
                 }
                 
                 Button(action: {
-                    alertMessages.message = applySyncraft(selectedVersion.path) ?? LocalizedStringKey("done")
+                    alertMessages.message = applySyncraft(selectedVersion.path, remove: false) ?? LocalizedStringKey("done")
                     alertMessages.triggerAlert.toggle()
                 }) {
                     Text ("install")
+                        .font(.headline)
                 }
-                .padding(.all)
+                .padding(.top)
+                
+                Button(action: {
+                    alertMessages.message = applySyncraft(selectedVersion.path, remove: true) ?? LocalizedStringKey("done")
+                    alertMessages.triggerAlert.toggle()
+                }) {
+                    Text ("remove")
+                        .font(.system(size: 12))
+                }
+                .padding(.bottom)
                 
                 .alert(alertMessages.message, isPresented: $alertMessages.triggerAlert) {
                     Button("OK", role: .cancel) {

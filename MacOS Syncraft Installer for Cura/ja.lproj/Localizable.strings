@@ -8,7 +8,9 @@
 
 "chooseversion" = "Cura のバージョンを選択してください";
 
-"install" = "Syncraft ファイルを Cura にインストールする";
+"install" = "ファイルをインストールする";
+
+"remove" = "ファイルをアンインストールする";
 
 "foldernotfound" = "Ultimaker Cura のインストール場所が見つかりませんでした。正しいバージョンを選択しているか、プログラムにディスク アクセス許可を与えているかを確認してください。";
 
@@ -19,5 +21,7 @@
 "version" = "バージョン";
 
 "installproblem" = "インストールに問題がありました。";
+
+"removeproblem" = "問題が発生しましたか? 問題が解決されました。";
 
 "done" = "終わり";

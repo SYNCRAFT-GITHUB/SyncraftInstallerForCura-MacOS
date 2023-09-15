@@ -6,9 +6,11 @@
 
 "ifpermgranted" = "Jeśli system wymagał już dostępu administratora do otwarcia programu,\nwłączenie pełnego dostępu do dysku nie jest konieczne.";
 
-"chooseversion" = "Wybierz wersję Cura";
+"chooseversion" = "Wybierz wersję";
 
-"install" = "Zainstaluj pliki Syncraft na Cura";
+"install" = "Zainstaluj pliki";
+
+"remove" = "Usuń pliki";
 
 "foldernotfound" = "Nie znaleziono lokalizacji instalacji Ultimaker Cura. Sprawdź, czy wybrałeś właściwą wersję lub czy przyznałeś programowi uprawnienia dostępu do dysku.";
 
@@ -19,5 +21,7 @@
 "version" = "Wersja";
 
 "installproblem" = "Wystąpił problem z instalacją.";
+
+"removeproblem" = "Wystąpił problem podczas odinstalowywania plików.";
 
 "done" = "Zrobione";

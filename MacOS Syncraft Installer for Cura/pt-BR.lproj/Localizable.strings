@@ -10,7 +10,9 @@
 
 "install" = "Instalar Arquivos no Cura";
 
-"foldernotfound" = "O local de instalação do Ultimaker Cura não foi encontrado. Verifique se você selecionou a versão correta ou se concedeu permissões corretas de \"Acesso Total ao Disco\" para o programa.";
+"remove" = "Remover Arquivos da Syncraft";
+
+"foldernotfound" = "O local do Ultimaker Cura não foi encontrado. Verifique se você selecionou a versão correta ou se concedeu permissões corretas de \"Acesso Total ao Disco\" para o programa.";
 
 "pleaseselectversion" = "Selecione uma versão para instalar os arquivos.";
 
@@ -19,5 +21,7 @@
 "version" = "Versão";
 
 "installproblem" = "Ocorreu um problema ao instalar os arquivos.";
+
+"removeproblem" = "Ocorreu um problema ao remover os arquivos.";
 
 "done" = "Sucesso";
