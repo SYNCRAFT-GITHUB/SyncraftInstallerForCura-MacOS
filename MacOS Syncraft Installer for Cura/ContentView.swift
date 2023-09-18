@@ -17,6 +17,20 @@ struct ContentView: View {
     
     @State var selectedVersion = Version(name: "0.0.X", path: "0.0")
     
+    func showAppVersion () -> some View {
+        let ver = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Syncraft"
+        return HStack {
+            Spacer()
+            VStack {
+                Spacer()
+                Text ("\(ver)")
+                    .opacity(0.5)
+                    .font(.callout)
+                    .padding(.all)
+            }
+        }
+    }
+    
     func optionColor (_ version: String) -> Color {
         if selectedVersion.name == version {
             return .teal
@@ -31,6 +45,8 @@ struct ContentView: View {
             
             Rectangle()
                 .fill(Color("background").gradient)
+            
+            showAppVersion()
             
             VStack {
                 VStack {
