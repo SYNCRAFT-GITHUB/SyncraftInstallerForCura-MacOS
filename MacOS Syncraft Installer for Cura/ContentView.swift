@@ -10,6 +10,7 @@ struct ContentView: View {
     }
     
     @State var curaVersions: [Version] = [
+        Version(name: "5.5.X", path: "5.5"),
         Version(name: "5.4.X", path: "5.4"),
         Version(name: "5.3.X", path: "5.3"),
         Version(name: "5.2.X", path: "5.2")
@@ -70,6 +71,7 @@ struct ContentView: View {
                     .padding(.all)
                 
                 Text ("chooseversion")
+                    .padding(.bottom)
                 
                 ForEach (curaVersions, id: \.self) { version in
                     Button (action: {selectedVersion = version}) {

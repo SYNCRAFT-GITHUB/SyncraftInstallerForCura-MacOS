@@ -12,7 +12,7 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     let resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
         .appendingPathComponent("Contents")
         .appendingPathComponent("Resources")
-        .appendingPathComponent((version == "5.4") ? "NewFiles" : "OldFiles")
+        .appendingPathComponent((version == ("5.4") || version == ("5.5")) ? "NewFiles" : "OldFiles")
     
     let targetPath = manager.urls(for: .libraryDirectory, in: .userDomainMask).first!
         .appendingPathComponent("Application Support")

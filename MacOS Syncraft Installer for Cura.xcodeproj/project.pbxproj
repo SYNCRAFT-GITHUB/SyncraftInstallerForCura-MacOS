@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5308C4562AB48FE900000328 /* OldFiles in Resources */ = {isa = PBXBuildFile; fileRef = 5308C4542AB48FE800000328 /* OldFiles */; };
-		531AE8982AB8734200F23D60 /* NewFiles in Resources */ = {isa = PBXBuildFile; fileRef = 531AE8972AB8734200F23D60 /* NewFiles */; };
 		533465482A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */; };
 		5334654A2A9D34240080CA30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465492A9D34240080CA30 /* ContentView.swift */; };
 		5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5334654B2A9D34250080CA30 /* Assets.xcassets */; };
@@ -16,11 +15,11 @@
 		533465652A9D360D0080CA30 /* ApplySyncraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465642A9D360D0080CA30 /* ApplySyncraft.swift */; };
 		538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538873E72A9FB1A8009A8CCB /* Localizable.strings */; };
 		53C7CF0B2A9F974C008F840B /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CF0A2A9F974C008F840B /* AlertMessages.swift */; };
+		53CF16C02AEC075F00332E1B /* NewFiles in Resources */ = {isa = PBXBuildFile; fileRef = 53CF16BF2AEC075F00332E1B /* NewFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5308C4542AB48FE800000328 /* OldFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OldFiles; sourceTree = "<group>"; };
-		531AE8972AB8734200F23D60 /* NewFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NewFiles; path = ../../../Desktop/NewFiles; sourceTree = "<group>"; };
 		533465442A9D34240080CA30 /* MacOS Syncraft Installer for Cura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacOS Syncraft Installer for Cura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_Syncraft_Installer_for_CuraApp.swift; sourceTree = "<group>"; };
 		533465492A9D34240080CA30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		538873EC2A9FB5F2009A8CCB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873ED2A9FB662009A8CCB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		53C7CF0A2A9F974C008F840B /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		53CF16BF2AEC075F00332E1B /* NewFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		533465462A9D34240080CA30 /* MacOS Syncraft Installer for Cura */ = {
 			isa = PBXGroup;
 			children = (
-				531AE8972AB8734200F23D60 /* NewFiles */,
+				53CF16BF2AEC075F00332E1B /* NewFiles */,
 				5308C4542AB48FE800000328 /* OldFiles */,
 				533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */,
 				533465492A9D34240080CA30 /* ContentView.swift */,
@@ -162,7 +162,7 @@
 			files = (
 				5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */,
 				5308C4562AB48FE900000328 /* OldFiles in Resources */,
-				531AE8982AB8734200F23D60 /* NewFiles in Resources */,
+				53CF16C02AEC075F00332E1B /* NewFiles in Resources */,
 				538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */,
 				5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */,
 			);
@@ -337,7 +337,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -366,7 +366,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
