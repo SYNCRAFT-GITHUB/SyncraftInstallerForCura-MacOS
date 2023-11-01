@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "Left Extruder",
+    "name": "Left Extruder [BETA]",
     "inherits": "fdmextruder",
     "metadata":
 	{

@@ -8,11 +8,30 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     }
     
     let manager = FileManager.default
+    var fileReference = "NewFiles"
+    
+    switch (version) {
+    case "5.5":
+        fileReference = "NewFiles";
+        break;
+    case "5.4":
+        fileReference = "NewFiles";
+        break;
+    case "5.3":
+        fileReference = "OldFiles";
+        break;
+    case "4.13":
+        fileReference = "LegacyFiles";
+        break;
+    default:
+        return AlertMessages.selectAVersion
+    }
+    
     
     let resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
         .appendingPathComponent("Contents")
         .appendingPathComponent("Resources")
-        .appendingPathComponent((version == ("5.4") || version == ("5.5")) ? "NewFiles" : "OldFiles")
+        .appendingPathComponent(fileReference)
     
     let targetPath = manager.urls(for: .libraryDirectory, in: .userDomainMask).first!
         .appendingPathComponent("Application Support")

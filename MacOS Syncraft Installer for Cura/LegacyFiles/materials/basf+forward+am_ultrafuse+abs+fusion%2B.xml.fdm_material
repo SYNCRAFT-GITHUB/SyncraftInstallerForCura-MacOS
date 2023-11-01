@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+  <metadata>
+    <name>
+      <brand>BASF Forward AM</brand>
+      <material>Ultrafuse ABS Fusion+</material>
+      <color>Generic</color>
+      <label>Ultrafuse ABS Fusion+</label>
+    </name>
+    <version>4</version>
+    <GUID>f43f4b21-e790-3831-9b34-b11694d2a41b</GUID>
+    <cura:pva_compatible>False</cura:pva_compatible>
+    <cura:breakaway_compatible>False</cura:breakaway_compatible>
+    <color_code>#b0fbe3</color_code>
+    <adhesion_info>3DLAC</adhesion_info>
+    <description />
+    <cura:ppa_original_file>generic_abs</cura:ppa_original_file>
+  </metadata>
+  <properties>
+    <density>1.075</density>
+    <diameter>2.85</diameter>
+  </properties>
+  <settings>
+	<cura:setting key="material_family">H_CHAMBER_TEMP</cura:setting>
+    <setting key="break speed">25</setting>
+    <setting key="flush purge length">60</setting>
+    <cura:setting key="speed_infill">40</cura:setting>
+    <setting key="break preparation position">-16</setting>
+    <cura:setting key="speed_topbottom">50</cura:setting>
+    <setting key="end of filament purge speed">0.5</setting>
+    <setting key="surface energy">70</setting>
+    <setting key="end of filament purge length">20</setting>
+    <setting key="maximum park duration">7200</setting>
+    <setting key="anti ooze retract speed">5</setting>
+    <setting key="build volume temperature">50</setting>
+    <setting key="break preparation speed">10</setting>
+    <setting key="print temperature">250</setting>
+    <setting key="break position">-50</setting>
+    <setting key="no load move factor">0.95</setting>
+    <setting key="heated bed temperature">110</setting>
+    <cura:setting key="cool_fan_speed_max">100</cura:setting>
+    <setting key="flush purge speed">0.5</setting>
+    <cura:setting key="material_shrinkage_percentage">100</cura:setting>
+    <cura:setting key="cool_fan_speed_min">60</cura:setting>
+    <setting key="anti ooze retract position">-4</setting>
+    <setting key="break preparation temperature">250</setting>
+    <cura:setting key="speed_layer_0">10</cura:setting>
+    <cura:setting key="speed_print">60</cura:setting>
+    <cura:setting key="speed_wall">40</cura:setting>
+    <setting key="standby temperature">85</setting>
+    <setting key="break temperature">119</setting>
+    <machine>
+      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
+      <setting key="standby temperature">200</setting>
+      <cura:setting key="wall_thickness">0.875</cura:setting>
+      <cura:setting key="speed_topbottom">25</cura:setting>
+      <cura:setting key="infill_sparse_density">20</cura:setting>
+      <cura:setting key="cool_min_layer_time_fan_speed_max">15</cura:setting>
+      <cura:setting key="speed_wall">35</cura:setting>
+      <cura:setting key="cool_min_speed">5</cura:setting>
+      <cura:setting key="top_bottom_thickness">0.775</cura:setting>
+      <setting key="print temperature">260</setting>
+      <cura:setting key="cool_min_layer_time">5</cura:setting>
+      <setting key="adhesion tendency">0</setting>
+      <cura:setting key="cool_fan_speed_min">35</cura:setting>
+      <cura:setting key="speed_print">50</cura:setting>
+      <hotend id="0.4 mm">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="0.25 mm">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="0.6 mm">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="0.8 mm">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+    </machine>
+    <machine>
+      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+      <cura:setting key="raft_airgap">0.15</cura:setting>
+      <cura:setting key="infill_line_width">0.4</cura:setting>
+      <setting key="print cooling">2</setting>
+      <cura:setting key="prime_tower_enable">no</cura:setting>
+      <setting key="retraction amount">5</setting>
+      <cura:setting key="machine_nozzle_cool_down_speed">0.85</cura:setting>
+      <cura:setting key="machine_nozzle_heat_up_speed">1.5</cura:setting>
+      <setting key="adhesion tendency">0</setting>
+      <cura:setting key="material_initial_print_temperature">235</cura:setting>
+      <setting key="heated bed temperature">97.5</setting>
+      <cura:setting key="material_final_print_temperature">230</cura:setting>
+      <hotend id="AA 0.4">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="BB 0.4">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="BB 0.8">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="CC 0.6">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="AA 0.25">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="AA 0.8">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+    </machine>
+    <machine>
+      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+      <cura:setting key="raft_airgap">0.15</cura:setting>
+      <cura:setting key="infill_line_width">0.4</cura:setting>
+      <setting key="print cooling">2</setting>
+      <cura:setting key="prime_tower_enable">no</cura:setting>
+      <setting key="retraction amount">5</setting>
+      <cura:setting key="machine_nozzle_cool_down_speed">0.85</cura:setting>
+      <cura:setting key="machine_nozzle_heat_up_speed">1.5</cura:setting>
+      <setting key="adhesion tendency">0</setting>
+      <cura:setting key="material_initial_print_temperature">235</cura:setting>
+      <cura:setting key="material_final_print_temperature">230</cura:setting>
+      <hotend id="AA 0.4">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="BB 0.4">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="BB 0.8">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="CC 0.6">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="AA 0.25">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="AA 0.8">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+    </machine>
+	<machine>
+      <machine_identifier manufacturer="Syncraft" product="Syncraft X1" />
+	  <cura:setting key="raft_airgap">0.15</cura:setting>
+      <cura:setting key="infill_line_width">0.4</cura:setting>
+      <setting key="print cooling">2</setting>
+      <cura:setting key="prime_tower_enable">no</cura:setting>
+      <setting key="retraction amount">5</setting>
+      <cura:setting key="machine_nozzle_cool_down_speed">0.85</cura:setting>
+      <cura:setting key="machine_nozzle_heat_up_speed">1.5</cura:setting>
+      <setting key="adhesion tendency">0</setting>
+      <setting key="heated bed temperature">95</setting>
+      <hotend id="Metal 0.4mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+	  <hotend id="Standard 0.4mm">
+        <setting key="hardware compatible">yes</setting>
+		<setting key="retraction amount">6.5</setting>
+		<setting key="print temperature">240</setting>
+      </hotend>
+	  <hotend id="Fiber 0.6mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+	  <hotend id="Standard 0.8mm">
+        <setting key="hardware compatible">yes</setting>
+		<setting key="print temperature">255</setting>
+      </hotend>
+	  <hotend id="Standard 0.25mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+	</machine>
+  </settings>
+</fdmmaterial>
