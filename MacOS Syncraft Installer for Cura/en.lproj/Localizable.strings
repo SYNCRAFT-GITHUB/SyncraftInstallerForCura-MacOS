@@ -4,7 +4,7 @@
 
 "enablediskperm" = "For the installer to work correctly, make sure to enable \"Full Disk Access\"\nin macOS Privacy & Security settings.";
 
-"ifpermgranted" = "If the system has already requested administrator access,\ngranting \"Full Disk Access\" is not strictly necessary.";
+"ifpermgranted" = "If the system has already requested admin access,\n\"Full Disk Access\" is not necessary.";
 
 "chooseversion" = "Choose a Cura Version";
 

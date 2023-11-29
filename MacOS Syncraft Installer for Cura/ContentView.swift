@@ -95,7 +95,9 @@ struct ContentView: View {
                     Text ("remove")
                         .font(.system(size: 12))
                 }
-                .padding(.bottom)
+                
+                Spacer()
+                    .frame(height: 15)
                 
                 .alert(alertMessages.message, isPresented: $alertMessages.triggerAlert) {
                     Button("OK", role: .cancel) {
