@@ -11,14 +11,11 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     var fileReference = "NewFiles"
     
     switch (version) {
+    case "5.6":
+        fileReference = "NewFiles";
+        break;
     case "5.5":
         fileReference = "NewFiles";
-        break;
-    case "5.4":
-        fileReference = "NewFiles";
-        break;
-    case "5.3":
-        fileReference = "OldFiles";
         break;
     case "4.13":
         fileReference = "LegacyFiles";

@@ -131,7 +131,7 @@
         "zig_zaggify_infill": { "value": "gradual_infill_steps == 0" },
         	
         "machine_start_gcode": {
-            "default_value": "M900 P{machine_nozzle_size} S{speed_print}\nCTEMP MAT='{material_type}' FAM='{material_family}'\nBREAK_CLEAN P={material_break_temperature}\nG21 ; set units to millimeters\nG90 ; use absolute positioning\nM82 ; absolute extrusion mode\nM104 S150 ; set extruder temp\nM140 S{material_bed_temperature_layer_0} ; set bed temp\nG28 Z ; home z\nM109 S150\nG28 XY; home XY\nSTART_GCODE\nM109 S{material_print_temperature_layer_0} ; wait for extruder temp\nPRIME_ROUTINE"
+            "default_value": "VERIFY_VARIABLES MACHINE='{machine_name}' NOZZLE='{machine_nozzle_id}' MATERIAL='{material_type}'\n M900 P{machine_nozzle_size} S{speed_print}\nCTEMP MAT='{material_type}' FAM='{material_family}'\nBREAK_CLEAN P={material_break_temperature}\nG21 ; set units to millimeters\nG90 ; use absolute positioning\nM82 ; absolute extrusion mode\nM104 S150 ; set extruder temp\nM140 S{material_bed_temperature_layer_0} ; set bed temp\nG28 Z ; home z\nM109 S150\nG28 XY; home XY\nSTART_GCODE\nM109 S{material_print_temperature_layer_0} ; wait for extruder temp\nPRIME_ROUTINE"
         },
         "machine_end_gcode": {
             "default_value": "END_GCODE"
