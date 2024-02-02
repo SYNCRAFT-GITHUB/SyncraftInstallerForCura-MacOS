@@ -282,7 +282,7 @@
     <setting key="retraction amount">8</setting>
     <cura:setting key="retraction_extrusion_window">1</cura:setting>
 	  <hotend id="Metal 0.4mm">
-        <setting key="hardware compatible">no</setting>
+        <setting key="hardware compatible">yes</setting>
       </hotend>
       <hotend id="Standard 0.4mm">
         <setting key="hardware compatible">yes</setting>
