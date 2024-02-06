@@ -52,6 +52,7 @@
     <setting key="build volume temperature">37</setting>
     <setting key="retraction amount">6.5</setting>
     <setting key="print temperature">270</setting>
+    <setting key="build_volume_temperature">60</setting>
     <cura:setting key="cool_fan_speed_max">100</cura:setting>
     <cura:setting key="speed_infill">45</cura:setting>
     <cura:setting key="material_bed_temperature_layer_0">80</cura:setting>

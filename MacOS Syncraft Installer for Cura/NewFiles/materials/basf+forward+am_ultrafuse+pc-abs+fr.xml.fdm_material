@@ -88,6 +88,7 @@
     <cura:setting key="cool_fan_speed_max">100</cura:setting>
     <cura:setting key="machine_nozzle_heat_up_speed">1.5</cura:setting>
     <setting key="print temperature">270</setting>
+    <setting key="build_volume_temperature">60</setting>
     <cura:setting key="material_shrinkage_percentage">100</cura:setting>
     <cura:setting key="material_initial_print_temperature">265</cura:setting>
     <cura:setting key="speed_layer_0">25</cura:setting>

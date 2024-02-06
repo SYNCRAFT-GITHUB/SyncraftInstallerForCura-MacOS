@@ -126,7 +126,7 @@ Ultrafuse PC GF30 is designed for functional prototyping and demanding applicati
       </hotend>
 	</machine>
 	<machine>
-      <machine_identifier manufacturer="Syncraft" product="Syncraft IDEX" />
+      <machine_identifier manufacturer="Syncraft" product="Syncraft NO_NAME" />
       <setting key="adhesion tendency">0</setting>
       <cura:setting key="speed_layer_0">15</cura:setting>
 	  <cura:setting key="support_pattern">zigzag</cura:setting>
@@ -152,7 +152,7 @@ Ultrafuse PC GF30 is designed for functional prototyping and demanding applicati
       </hotend>
 	</machine>
 	<machine>
-      <machine_identifier manufacturer="Syncraft" product="Syncraft IDEX - Copy Mode" />
+      <machine_identifier manufacturer="Syncraft" product="Syncraft NO_NAME - Copy Mode" />
       <setting key="adhesion tendency">0</setting>
       <cura:setting key="speed_layer_0">15</cura:setting>
 	  <cura:setting key="support_pattern">zigzag</cura:setting>

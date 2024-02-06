@@ -23,10 +23,10 @@
       <machine_identifier manufacturer="Syncraft" product="syncraft_x1" />
       <setting key="heated bed temperature">60</setting>
       <setting key="print cooling">100</setting>
-      <hotend id="M 0.4mm">
+      <hotend id="Metal 0.4mm">
 		<setting key="hardware compatible">no</setting>
       </hotend>
-      <hotend id="0.4mm">
+      <hotend id="Standard 0.4mm">
         <setting key="hardware compatible">yes</setting>
         <setting key="print temperature">225</setting>
         <setting key="standby temperature">100</setting>
@@ -34,19 +34,19 @@
         <setting key="retraction amount">7.5</setting>
         <setting key="retraction speed">25.0</setting>
       </hotend>
-      <hotend id="R 0.6mm">
+      <hotend id="Fiber 0.6mm">
 	    <setting key="print temperature">230</setting>
         <setting key="hardware compatible">yes</setting>
         <setting key="standby temperature">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
       </hotend>
-	  <hotend id="0.8mm">
+	  <hotend id="Standard 0.8mm">
 	    <setting key="print temperature">235</setting>	  
         <setting key="hardware compatible">yes</setting>
         <setting key="standby temperature">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
       </hotend>
-      <hotend id="0.25mm">
+      <hotend id="Standard 0.25mm">
 	    <setting key="print temperature">220</setting>
         <setting key="hardware compatible">no</setting>
         <setting key="standby temperature">100</setting>

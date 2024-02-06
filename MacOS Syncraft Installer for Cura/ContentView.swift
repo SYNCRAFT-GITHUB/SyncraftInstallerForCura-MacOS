@@ -10,7 +10,6 @@ struct ContentView: View {
     }
     
     @State var curaVersions: [Version] = [
-        Version(name: "5.6.X", path: "5.6"),
         Version(name: "5.5.X", path: "5.5"),
         Version(name: "4.13.X", path: "4.13")
     ]
