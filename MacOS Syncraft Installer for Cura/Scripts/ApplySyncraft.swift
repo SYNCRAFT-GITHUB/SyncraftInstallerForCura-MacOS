@@ -94,7 +94,7 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
         }
     }
     
-    sleep(4)
+    sleep(8)
     
     if downloadFail {
         return AlertMessages.internet
