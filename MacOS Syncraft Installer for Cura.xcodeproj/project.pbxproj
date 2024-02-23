@@ -37,6 +37,7 @@
 		53C7CF0A2A9F974C008F840B /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 		53D6ADF72B88D53000F69A68 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		53D6ADFC2B88DB1900F69A68 /* RemoteFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RemoteFiles; sourceTree = "<group>"; };
+		53D6ADFE2B88DD1800F69A68 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		5334653B2A9D34240080CA30 = {
 			isa = PBXGroup;
 			children = (
+				53D6ADFE2B88DD1800F69A68 /* .gitignore.md */,
 				533465462A9D34240080CA30 /* MacOS Syncraft Installer for Cura */,
 				533465452A9D34240080CA30 /* Products */,
 			);
