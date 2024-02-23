@@ -32,7 +32,7 @@ struct ContentView: View {
     
     func optionColor (_ version: String) -> Color {
         if selectedVersion.name == version {
-            return .teal
+            return .yellow
         } else {
             return .white
         }
@@ -84,6 +84,17 @@ struct ContentView: View {
                     Text ("remove")
                         .font(.system(size: 12))
                 }
+                
+                Group {
+                    
+                    Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.5.0/UltiMaker-Cura-5.5.0-macos-ARM64.dmg")!)
+                        .padding(.top)
+                    
+                    Link("downloadCuraIntel", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.5.0/UltiMaker-Cura-5.5.0-macos-X64.dmg")!)
+                    
+                }
+                .font(.system(size: 14))
+                .foregroundColor(.cyan)
                 
                 Spacer()
                     .frame(height: 15)

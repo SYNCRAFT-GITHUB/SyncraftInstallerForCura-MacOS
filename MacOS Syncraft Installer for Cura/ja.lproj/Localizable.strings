@@ -1,6 +1,10 @@
 "title" = "Cura 用 Syncraft インストーラー";
 
-"subtitle" = "Ultimaker Cura 用 Syncraft ファイル インストーラー";
+"subtitle" = "Cura 用 Syncraft ファイル インストーラー";
+
+"downloadCuraAppleSilicon" = "公式サイトからCuraをダウンロード (Apple Silicon)";
+
+"downloadCuraIntel" = "公式サイトからCuraをダウンロード (Intel)";
 
 "enablediskperm" = "インストーラーが正しく動作するには、[プライバシーとセキュリティ]\n設定でフル ディスク アクセスを必ず有効にしてください。";
 

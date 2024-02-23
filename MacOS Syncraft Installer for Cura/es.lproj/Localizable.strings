@@ -1,6 +1,10 @@
 "title" = "Instalador de Syncraft para Cura";
 
-"subtitle" = "Instalador de archivos Syncraft para Ultimaker Cura";
+"subtitle" = "Instalador de archivos Syncraft para Cura";
+
+"downloadCuraAppleSilicon" = "Descarga Cura desde el sitio web oficial (Apple Silicon)";
+
+"downloadCuraIntel" = "Descarga Cura desde el sitio web oficial (Intel)";
 
 "enablediskperm" = "Para que el instalador funcione correctamente, asegúrese de habilitar \"Acceso Total al Disco\"\n en la configuración de Privacidad y seguridad de macOS.";
 

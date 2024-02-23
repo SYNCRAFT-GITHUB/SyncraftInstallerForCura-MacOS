@@ -5,15 +5,24 @@ import Network
 
 
 func downloadAndUnzip(from url: URL, to destinationURL: URL, completion: @escaping (Error?) -> Void) {
+    
     let fileManager = FileManager.default
-
+    let newLocation = destinationURL.appendingPathComponent("Cura-SyncraftFiles")
+    
     do {
-        try fileManager.removeItem(at: destinationURL)
+        try fileManager.removeItem(at: newLocation)
     } catch {
-        // Ignore errors if the folder doesn't exist
+        print("Impossible to remove: \(newLocation)")
+    }
+    
+    do {
+        try fileManager.createDirectory(at: newLocation, withIntermediateDirectories: true, attributes: nil)
+    } catch {
+        print("Impossible to create: \(newLocation)")
     }
 
     let task = URLSession.shared.downloadTask(with: url) { (tempLocalUrl, response, error) in
+        
         if let error = error {
             completion(error)
             return
@@ -25,10 +34,13 @@ func downloadAndUnzip(from url: URL, to destinationURL: URL, completion: @escapi
         }
 
         do {
-            try fileManager.moveItem(at: tempLocalUrl, to: destinationURL)
+            let zipLocation = newLocation
+                .appendingPathComponent("files.zip")
+            
+            try fileManager.moveItem(at: tempLocalUrl, to: zipLocation)
 
-            if fileManager.fileExists(atPath: destinationURL.path) {
-                let success = SSZipArchive.unzipFile(atPath: destinationURL.path, toDestination: destinationURL.deletingLastPathComponent().path)
+            if fileManager.fileExists(atPath: zipLocation.path) {
+                let success = SSZipArchive.unzipFile(atPath: zipLocation.path, toDestination: newLocation.path)
 
                 if success {
                     completion(nil)
@@ -48,56 +60,49 @@ func downloadAndUnzip(from url: URL, to destinationURL: URL, completion: @escapi
 
 func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     
+    let manager = FileManager.default
+    let documentsDirectory = manager.urls(for: .documentDirectory, in: .userDomainMask).first!
+    var resourcesInstallerPath: URL = documentsDirectory
+    var online: Bool = false
+    
     if version == "0.0" {
         return AlertMessages.selectAVersion
+    } else if version == "4.13" {
+        let resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
+            .appendingPathComponent("Contents")
+            .appendingPathComponent("Resources")
+            .appendingPathComponent("LegacyFiles")
+    } else {
+        online = true
+        let resourcesInstallerPath = documentsDirectory
+            .appendingPathComponent("Cura-SyncraftFiles")
     }
-    
-    let manager = FileManager.default
-    var fileReference = "RemoteFiles"
-    
-    switch (version) {
-    case "5.5":
-        fileReference = "RemoteFiles";
-        break;
-    case "4.13":
-        fileReference = "LegacyFiles";
-        break;
-    default:
-        return AlertMessages.selectAVersion
-    }
-    
-    
-    let resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
-        .appendingPathComponent("Contents")
-        .appendingPathComponent("Resources")
-        .appendingPathComponent(fileReference)
-    
-    let zipPath = URL(filePath: Bundle.main.bundlePath)
-        .appendingPathComponent("Contents")
-        .appendingPathComponent("Resources")
-        .appendingPathComponent(fileReference)
-        .appendingPathComponent("files.zip")
     
     let targetPath = manager.urls(for: .libraryDirectory, in: .userDomainMask).first!
         .appendingPathComponent("Application Support")
         .appendingPathComponent("cura")
         .appendingPathComponent(version)
     
-    var downloadFail: Bool = false
-    let downloadURL = URL(string: "https://github.com/SYNCRAFT-GITHUB/CuraFiles/releases/latest/download/files.zip")!
-    downloadAndUnzip(from: downloadURL, to: zipPath) { error in
-        if let error = error {
-            print("Error: \(error)")
-            downloadFail.toggle()
-        } else {
-            print("Download + unzip OK!")
+    if online {
+        var displayError: String = ""
+        var downloadFail: Bool = false
+        let downloadURL = URL(string: "https://github.com/SYNCRAFT-GITHUB/CuraFiles/releases/latest/download/files.zip")!
+        downloadAndUnzip(from: downloadURL, to: documentsDirectory) { error in
+            if let error = error {
+                print("Error: \(error)")
+                displayError = error.localizedDescription
+                downloadFail.toggle()
+            } else {
+                print("Download + unzip OK!")
+            }
         }
-    }
-    
-    sleep(8)
-    
-    if downloadFail {
-        return AlertMessages.internet
+        
+        if downloadFail {
+            return LocalizedStringKey(displayError)
+        }
+        
+        sleep(3)
+        
     }
     
     if !targetPath.hasDirectoryPath {

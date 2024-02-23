@@ -1,6 +1,10 @@
 "title" = "Syncraft Installer for Cura";
 
-"subtitle" = "Syncraft file installer for Ultimaker Cura";
+"subtitle" = "Syncraft file installer for Ultimaker Cura for MacOS";
+
+"downloadCuraAppleSilicon" = "Download Cura from the official GitHub (Apple Silicon)";
+
+"downloadCuraIntel" = "Download Cura from the official GitHub (Intel)";
 
 "enablediskperm" = "For the installer to work correctly, make sure to enable \"Full Disk Access\"\nin macOS Privacy & Security settings.";
 

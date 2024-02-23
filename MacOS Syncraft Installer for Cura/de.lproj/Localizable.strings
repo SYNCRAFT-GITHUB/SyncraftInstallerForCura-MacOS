@@ -1,6 +1,10 @@
 "title" = "Syncraft-Installationsprogramm für Cura";
 
-"subtitle" = "Syncraft-Dateiinstallationsprogramm für Ultimaker Cura";
+"subtitle" = "Syncraft-Dateiinstallationsprogramm für Cura";
+
+"downloadCuraAppleSilicon" = "Laden Sie Cura herunter (Apple Silicon)";
+
+"downloadCuraIntel" = "Laden Sie Cura herunter (Intel)";
 
 "enablediskperm" = "Damit das Installationsprogramm ordnungsgemäß funktioniert, stellen Sie sicher, dass in den Datenschutz- und Sicherheitseinstellungen von macOS der vollständige Festplattenzugriff aktiviert ist.";
 

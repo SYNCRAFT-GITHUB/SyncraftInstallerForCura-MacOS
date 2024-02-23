@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5331AD262B88E083008AE4F7 /* RemoteFiles in Resources */ = {isa = PBXBuildFile; fileRef = 5331AD252B88E083008AE4F7 /* RemoteFiles */; };
 		533465482A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */; };
 		5334654A2A9D34240080CA30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465492A9D34240080CA30 /* ContentView.swift */; };
 		5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5334654B2A9D34250080CA30 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5331AD252B88E083008AE4F7 /* RemoteFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RemoteFiles; sourceTree = "<group>"; };
 		533465442A9D34240080CA30 /* MacOS Syncraft Installer for Cura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacOS Syncraft Installer for Cura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_Syncraft_Installer_for_CuraApp.swift; sourceTree = "<group>"; };
 		533465492A9D34240080CA30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 		533465462A9D34240080CA30 /* MacOS Syncraft Installer for Cura */ = {
 			isa = PBXGroup;
 			children = (
-				5331AD252B88E083008AE4F7 /* RemoteFiles */,
 				538EC2802AF295880013A9EF /* LegacyFiles */,
 				533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */,
 				533465492A9D34240080CA30 /* ContentView.swift */,
@@ -172,7 +169,6 @@
 			files = (
 				5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */,
 				538EC2812AF295880013A9EF /* LegacyFiles in Resources */,
-				5331AD262B88E083008AE4F7 /* RemoteFiles in Resources */,
 				538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */,
 				5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */,
 			);
