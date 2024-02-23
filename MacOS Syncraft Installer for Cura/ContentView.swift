@@ -58,16 +58,6 @@ struct ContentView: View {
                 }
                 .padding(.all)
                 
-                Text ("enablediskperm")
-                    .multilineTextAlignment(.center)
-                    .font(.callout)
-                    .padding(.top)
-                
-                Text ("ifpermgranted")
-                    .multilineTextAlignment(.center)
-                    .font(.callout)
-                    .padding(.all)
-                
                 Text ("chooseversion")
                     .padding(.bottom)
                 

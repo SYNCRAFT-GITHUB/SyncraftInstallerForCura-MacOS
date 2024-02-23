@@ -15,7 +15,8 @@
 		538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538873E72A9FB1A8009A8CCB /* Localizable.strings */; };
 		538EC2812AF295880013A9EF /* LegacyFiles in Resources */ = {isa = PBXBuildFile; fileRef = 538EC2802AF295880013A9EF /* LegacyFiles */; };
 		53C7CF0B2A9F974C008F840B /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CF0A2A9F974C008F840B /* AlertMessages.swift */; };
-		53CF16C02AEC075F00332E1B /* NewFiles in Resources */ = {isa = PBXBuildFile; fileRef = 53CF16BF2AEC075F00332E1B /* NewFiles */; };
+		53D6ADF52B88CF2D00F69A68 /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 53D6ADF42B88CF2D00F69A68 /* ZipArchive */; };
+		53D6ADFD2B88DB1900F69A68 /* RemoteFiles in Resources */ = {isa = PBXBuildFile; fileRef = 53D6ADFC2B88DB1900F69A68 /* RemoteFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,8 @@
 		538873ED2A9FB662009A8CCB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538EC2802AF295880013A9EF /* LegacyFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LegacyFiles; sourceTree = "<group>"; };
 		53C7CF0A2A9F974C008F840B /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
-		53CF16BF2AEC075F00332E1B /* NewFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewFiles; sourceTree = "<group>"; };
+		53D6ADF72B88D53000F69A68 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		53D6ADFC2B88DB1900F69A68 /* RemoteFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RemoteFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D6ADF52B88CF2D00F69A68 /* ZipArchive in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +70,8 @@
 		533465462A9D34240080CA30 /* MacOS Syncraft Installer for Cura */ = {
 			isa = PBXGroup;
 			children = (
+				53D6ADFC2B88DB1900F69A68 /* RemoteFiles */,
 				538EC2802AF295880013A9EF /* LegacyFiles */,
-				53CF16BF2AEC075F00332E1B /* NewFiles */,
 				533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */,
 				533465492A9D34240080CA30 /* ContentView.swift */,
 				53C7CF0A2A9F974C008F840B /* AlertMessages.swift */,
@@ -113,6 +116,9 @@
 			dependencies = (
 			);
 			name = "MacOS Syncraft Installer for Cura";
+			packageProductDependencies = (
+				53D6ADF42B88CF2D00F69A68 /* ZipArchive */,
+			);
 			productName = "MacOS Syncraft Installer for Cura";
 			productReference = 533465442A9D34240080CA30 /* MacOS Syncraft Installer for Cura.app */;
 			productType = "com.apple.product-type.application";
@@ -144,8 +150,12 @@
 				es,
 				de,
 				pl,
+				"zh-Hans",
 			);
 			mainGroup = 5334653B2A9D34240080CA30;
+			packageReferences = (
+				53D6ADF32B88CF2D00F69A68 /* XCRemoteSwiftPackageReference "ZipArchive" */,
+			);
 			productRefGroup = 533465452A9D34240080CA30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,8 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */,
-				53CF16C02AEC075F00332E1B /* NewFiles in Resources */,
 				538EC2812AF295880013A9EF /* LegacyFiles in Resources */,
+				53D6ADFD2B88DB1900F69A68 /* RemoteFiles in Resources */,
 				538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */,
 				5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */,
 			);
@@ -194,6 +204,7 @@
 				538873EB2A9FB583009A8CCB /* es */,
 				538873EC2A9FB5F2009A8CCB /* de */,
 				538873ED2A9FB662009A8CCB /* pl */,
+				53D6ADF72B88D53000F69A68 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -337,7 +348,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.7.3;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -366,7 +377,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.7.3;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -396,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53D6ADF32B88CF2D00F69A68 /* XCRemoteSwiftPackageReference "ZipArchive" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZipArchive/ZipArchive.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53D6ADF42B88CF2D00F69A68 /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53D6ADF32B88CF2D00F69A68 /* XCRemoteSwiftPackageReference "ZipArchive" */;
+			productName = ZipArchive;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5334653C2A9D34240080CA30 /* Project object */;
 }

@@ -6,6 +6,8 @@
 
 "ifpermgranted" = "Se o sistema já solicitou acesso administrador para abrir o programa,\n habilitar \"Acesso Total ao Disco\" não é necessário.";
 
+"requiresweb" = "A instalação exige acesso a Internet.";
+
 "chooseversion" = "Escolha a versão do Cura";
 
 "install" = "Instalar Arquivos no Cura";

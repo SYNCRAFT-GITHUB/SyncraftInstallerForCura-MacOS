@@ -15,4 +15,6 @@ final class AlertMessages: ObservableObject {
     
     static let removeProblem = LocalizedStringKey("removeproblem")
     
+    static let internet = LocalizedStringKey("requiresweb")
+    
 }

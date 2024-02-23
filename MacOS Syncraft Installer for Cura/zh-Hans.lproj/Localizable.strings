@@ -1,0 +1,29 @@
+"title" = "Cura的Syncraft文件安装程序";
+
+"subtitle" = "Ultimaker Cura的Syncraft文件安装程序";
+
+"enablediskperm" = "为了使安装程序正常工作，请确保在macOS隐私与安全设置中启用\"完全磁盘访问\"。";
+
+"ifpermgranted" = "如果系统已经请求了管理员访问权限，则\"完全磁盘访问\"是不必要的。";
+
+"requiresweb" = "安装需要互联网连接。";
+
+"chooseversion" = "选择Cura版本";
+
+"install" = "安装Syncraft文件";
+
+"remove" = "删除Syncraft文件";
+
+"foldernotfound" = "未找到Ultimaker Cura的位置，请检查您是否选择了正确的版本，或者是否已经授予程序磁盘访问权限。";
+
+"pleaseselectversion" = "请选择要应用文件的版本。";
+
+"syncraftwebsite" = "Syncraft网站";
+
+"version" = "版本";
+
+"installproblem" = "安装时出现问题。";
+
+"removeproblem" = "卸载文件时出现问题。";
+
+"done" = "完成";

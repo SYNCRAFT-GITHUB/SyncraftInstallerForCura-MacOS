@@ -6,6 +6,8 @@
 
 "ifpermgranted" = "If the system has already requested admin access,\n\"Full Disk Access\" is not necessary.";
 
+"requiresweb" = "The installation requires internet.";
+
 "chooseversion" = "Choose a Cura Version";
 
 "install" = "Install Syncraft files";

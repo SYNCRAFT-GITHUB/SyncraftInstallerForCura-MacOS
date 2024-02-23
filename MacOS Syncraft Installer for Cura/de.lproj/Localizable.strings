@@ -6,6 +6,8 @@
 
 "ifpermgranted" = "Wenn das System bereits Administratorzugriff zum Öffnen des Programms benötigt,\nist die Aktivierung des vollständigen Festplattenzugriffs nicht erforderlich.";
 
+"requiresweb" = "Die Installation erfordert eine Internetverbindung.";
+
 "chooseversion" = "Wählen Sie eine Cura-Version";
 
 "install" = "Dateien installieren";

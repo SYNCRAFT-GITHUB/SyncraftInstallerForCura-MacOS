@@ -6,6 +6,8 @@
 
 "ifpermgranted" = "Jeśli system wymagał już dostępu administratora do otwarcia programu,\nwłączenie pełnego dostępu do dysku nie jest konieczne.";
 
+"requiresweb" = "Instalacja wymaga połączenia z internetem.";
+
 "chooseversion" = "Wybierz wersję";
 
 "install" = "Zainstaluj pliki";

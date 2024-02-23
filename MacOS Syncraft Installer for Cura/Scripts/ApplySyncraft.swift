@@ -1,5 +1,50 @@
 import Foundation
 import SwiftUI
+import ZipArchive
+import Network
+
+
+func downloadAndUnzip(from url: URL, to destinationURL: URL, completion: @escaping (Error?) -> Void) {
+    let fileManager = FileManager.default
+
+    do {
+        try fileManager.removeItem(at: destinationURL)
+    } catch {
+        // Ignore errors if the folder doesn't exist
+    }
+
+    let task = URLSession.shared.downloadTask(with: url) { (tempLocalUrl, response, error) in
+        if let error = error {
+            completion(error)
+            return
+        }
+
+        guard let tempLocalUrl = tempLocalUrl else {
+            completion(NSError(domain: "Download Error", code: 0, userInfo: [NSLocalizedDescriptionKey: "Temporary file URL is nil."]))
+            return
+        }
+
+        do {
+            try fileManager.moveItem(at: tempLocalUrl, to: destinationURL)
+
+            if fileManager.fileExists(atPath: destinationURL.path) {
+                let success = SSZipArchive.unzipFile(atPath: destinationURL.path, toDestination: destinationURL.deletingLastPathComponent().path)
+
+                if success {
+                    completion(nil)
+                } else {
+                    completion(NSError(domain: "Unzip Error", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to unzip file!"]))
+                }
+            } else {
+                completion(NSError(domain: "Download Error", code: 0, userInfo: [NSLocalizedDescriptionKey: "Download failed!"]))
+            }
+        } catch {
+            completion(error)
+        }
+    }
+    task.resume()
+}
+
 
 func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     
@@ -8,11 +53,11 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     }
     
     let manager = FileManager.default
-    var fileReference = "NewFiles"
+    var fileReference = "RemoteFiles"
     
     switch (version) {
     case "5.5":
-        fileReference = "NewFiles";
+        fileReference = "RemoteFiles";
         break;
     case "4.13":
         fileReference = "LegacyFiles";
@@ -27,10 +72,33 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
         .appendingPathComponent("Resources")
         .appendingPathComponent(fileReference)
     
+    let zipPath = URL(filePath: Bundle.main.bundlePath)
+        .appendingPathComponent("Contents")
+        .appendingPathComponent("Resources")
+        .appendingPathComponent(fileReference)
+        .appendingPathComponent("files.zip")
+    
     let targetPath = manager.urls(for: .libraryDirectory, in: .userDomainMask).first!
         .appendingPathComponent("Application Support")
         .appendingPathComponent("cura")
         .appendingPathComponent(version)
+    
+    var downloadFail: Bool = false
+    let downloadURL = URL(string: "https://github.com/SYNCRAFT-GITHUB/CuraFiles/releases/latest/download/files.zip")!
+    downloadAndUnzip(from: downloadURL, to: zipPath) { error in
+        if let error = error {
+            print("Error: \(error)")
+            downloadFail.toggle()
+        } else {
+            print("Download + unzip OK!")
+        }
+    }
+    
+    sleep(4)
+    
+    if downloadFail {
+        return AlertMessages.internet
+    }
     
     if !targetPath.hasDirectoryPath {
         return AlertMessages.folderNotFound
