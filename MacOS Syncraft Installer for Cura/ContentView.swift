@@ -7,14 +7,16 @@ struct ContentView: View {
     struct Version: Hashable {
         let name: String
         let path: String
+        let stable: Bool
     }
     
     @State var curaVersions: [Version] = [
-        Version(name: "5.5.X", path: "5.5"),
-        Version(name: "4.13.X", path: "4.13")
+        Version(name: "5.6.X", path: "5.6", stable: false),
+        Version(name: "5.5.X", path: "5.5", stable: true),
+        Version(name: "4.13.X", path: "4.13", stable: true)
     ]
     
-    @State var selectedVersion = Version(name: "0.0.X", path: "0.0")
+    @State var selectedVersion = Version(name: "0.0.X", path: "0.0", stable: true)
     
     func showAppVersion () -> some View {
         let ver = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Syncraft"
@@ -32,7 +34,7 @@ struct ContentView: View {
     
     func optionColor (_ version: String) -> Color {
         if selectedVersion.name == version {
-            return .yellow
+            return .indigo
         } else {
             return .white
         }
@@ -62,10 +64,23 @@ struct ContentView: View {
                     .padding(.bottom)
                 
                 ForEach (curaVersions, id: \.self) { version in
-                    Button (action: {selectedVersion = version}) {
-                        Text (version.name)
-                            .foregroundColor(optionColor(version.name))
+                    HStack {
+                        Button (action: {selectedVersion = version}) {
+                            Text (version.name)
+                                .foregroundColor(optionColor(version.name))
+                        }
+                        Spacer()
+                        Text(version.stable ? "stable" : "unstable")
+                            .foregroundStyle(version.stable ? Color.green : Color.yellow)
+                        Spacer()
+                            .frame(width: 10)
                     }
+                    .background(
+                        version.stable ? Color.green.opacity(0.4).blur(radius: 17.0)
+                        : Color.yellow.opacity(0.4).blur(radius: 17.0)
+                    )
+                    .cornerRadius(5.0)
+                    .frame(width: 165)
                 }
                 
                 Button(action: {

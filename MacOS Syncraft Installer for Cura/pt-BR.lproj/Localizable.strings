@@ -1,10 +1,14 @@
 "title" = "Instalador da Syncraft para o Cura";
 
+"stable" = "Estável";
+
+"unstable" = "Instável";
+
 "subtitle" = "Instalador dos arquivos da Syncraft para o Cura";
 
-"downloadCuraAppleSilicon" = "Baixar Cura do Github oficial (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Baixar Cura 5.5 do Github oficial (Apple Silicon)";
 
-"downloadCuraIntel" = "Baixar Cura do Github oficial (Intel)";
+"downloadCuraIntel" = "Baixar Cura 5.5 do Github oficial (Intel)";
 
 "enablediskperm" = "Para que o instalador funcione corretamente, ative \"Acesso Total ao Disco\"\nnas configurações de Privacidade e Segurança do macOS.";
 

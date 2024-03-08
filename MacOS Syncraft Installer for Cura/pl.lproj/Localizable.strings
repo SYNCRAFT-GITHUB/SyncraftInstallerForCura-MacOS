@@ -1,10 +1,14 @@
 "title" = "Instalator Syncraft dla Cura";
 
+"stable" = "Stabilny";
+
+"unstable" = "Niestabilny";
+
 "subtitle" = "Instalator plików Syncraft dla Cura";
 
-"downloadCuraAppleSilicon" = "Pobierz Cura (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Pobierz Cura 5.5 (Apple Silicon)";
 
-"downloadCuraIntel" = "Pobierz Cura (Intel)";
+"downloadCuraIntel" = "Pobierz Cura 5.5 (Intel)";
 
 "enablediskperm" = "Aby instalator działał poprawnie, pamiętaj o włączeniu pełnego dostępu\ndo dysku w ustawieniach prywatności i bezpieczeństwa macOS.";
 

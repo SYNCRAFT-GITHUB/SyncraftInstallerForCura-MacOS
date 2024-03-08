@@ -1,10 +1,14 @@
 "title" = "Cura 用 Syncraft インストーラー";
 
+"stable" = "安定している";
+
+"unstable" = "不安定な";
+
 "subtitle" = "Cura 用 Syncraft ファイル インストーラー";
 
-"downloadCuraAppleSilicon" = "公式サイトからCuraをダウンロード (Apple Silicon)";
+"downloadCuraAppleSilicon" = "公式サイトからCura 5.5をダウンロード (Apple Silicon)";
 
-"downloadCuraIntel" = "公式サイトからCuraをダウンロード (Intel)";
+"downloadCuraIntel" = "公式サイトからCura 5.5をダウンロード (Intel)";
 
 "enablediskperm" = "インストーラーが正しく動作するには、[プライバシーとセキュリティ]\n設定でフル ディスク アクセスを必ず有効にしてください。";
 

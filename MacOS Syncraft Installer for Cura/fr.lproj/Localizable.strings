@@ -1,0 +1,37 @@
+"title" = "Installateur de Syncraft pour Cura";
+
+"stable" = "Stable";
+
+"unstable" = "Instable";
+
+"subtitle" = "Installateur des fichiers Syncraft pour Cura";
+
+"downloadCuraAppleSilicon" = "Télécharger Cura 5.5 depuis le GitHub officiel (Apple Silicon)";
+
+"downloadCuraIntel" = "Télécharger Cura 5.5 depuis le GitHub officiel (Intel)";
+
+"enablediskperm" = "Pour que l'installateur fonctionne correctement, activez l'option \"Accès complet au disque\"\ndans les paramètres de Sécurité et confidentialité de macOS.";
+
+"ifpermgranted" = "Si le système a déjà demandé l'accès administrateur pour ouvrir le programme,\n l'activation de \"Accès complet au disque\" n'est pas nécessaire.";
+
+"requiresweb" = "L'installation nécessite un accès à Internet.";
+
+"chooseversion" = "Choisissez la version de Cura";
+
+"install" = "Installer des fichiers dans Cura";
+
+"remove" = "Supprimer les fichiers de Syncraft";
+
+"foldernotfound" = "L'emplacement d'Ultimaker Cura n'a pas été trouvé. Vérifiez si vous avez sélectionné la bonne version ou si vous avez accordé les autorisations appropriées pour \"Accès complet au disque\" pour le programme.";
+
+"pleaseselectversion" = "Veuillez sélectionner une version pour installer les fichiers.";
+
+"syncraftwebsite" = "Site web de Syncraft";
+
+"version" = "Version";
+
+"installproblem" = "Un problème est survenu lors de l'installation des fichiers.";
+
+"removeproblem" = "Un problème est survenu lors de la suppression des fichiers.";
+
+"done" = "Terminé";

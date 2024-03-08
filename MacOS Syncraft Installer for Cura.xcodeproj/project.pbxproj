@@ -26,6 +26,7 @@
 		5334654E2A9D34250080CA30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		533465502A9D34250080CA30 /* MacOS_Syncraft_Installer_for_Cura.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_Syncraft_Installer_for_Cura.entitlements; sourceTree = "<group>"; };
 		533465642A9D360D0080CA30 /* ApplySyncraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySyncraft.swift; sourceTree = "<group>"; };
+		53874E8D2B9B97CA001632C2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873E62A9FB1A8009A8CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873E92A9FB1ED009A8CCB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		538873EA2A9FB4F6009A8CCB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 				de,
 				pl,
 				"zh-Hans",
+				fr,
 			);
 			mainGroup = 5334653B2A9D34240080CA30;
 			packageReferences = (
@@ -201,6 +203,7 @@
 				538873EC2A9FB5F2009A8CCB /* de */,
 				538873ED2A9FB662009A8CCB /* pl */,
 				53D6ADF72B88D53000F69A68 /* zh-Hans */,
+				53874E8D2B9B97CA001632C2 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -344,7 +347,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -373,7 +376,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

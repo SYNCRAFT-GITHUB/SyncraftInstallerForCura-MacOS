@@ -68,13 +68,13 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     if version == "0.0" {
         return AlertMessages.selectAVersion
     } else if version == "4.13" {
-        let resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
+        resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
             .appendingPathComponent("Contents")
             .appendingPathComponent("Resources")
             .appendingPathComponent("LegacyFiles")
     } else {
         online = true
-        let resourcesInstallerPath = documentsDirectory
+        resourcesInstallerPath = documentsDirectory
             .appendingPathComponent("Cura-SyncraftFiles")
     }
     
@@ -82,6 +82,10 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
         .appendingPathComponent("Application Support")
         .appendingPathComponent("cura")
         .appendingPathComponent(version)
+    
+    if !targetPath.hasDirectoryPath {
+        return AlertMessages.folderNotFound
+    }
     
     if online {
         var displayError: String = ""
@@ -101,12 +105,8 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
             return LocalizedStringKey(displayError)
         }
         
-        sleep(3)
+        sleep(6)
         
-    }
-    
-    if !targetPath.hasDirectoryPath {
-        return AlertMessages.folderNotFound
     }
     
     do {
