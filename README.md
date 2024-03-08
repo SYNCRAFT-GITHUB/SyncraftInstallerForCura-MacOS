@@ -16,5 +16,6 @@ Os arquivos no Cura não serão afetados por deletar o instalador.
 O MacOS alegará que não pode verificar o software e não permitirá que você abra o instalador.
 Se isso acontecer, vá para “Privacidade e Segurança” do MacOS para permitir que o programa seja iniciado.
 
-![screen_cap1](https://github.com/SYNCRAFT-GITHUB/SyncraftInstallerForCura-MacOS/assets/110249038/f718b9f1-9f26-47a8-954f-36a2330148e4)
-<img width="1440" alt="screen_cap2" src="https://github.com/SYNCRAFT-GITHUB/SyncraftInstallerForCura-MacOS/assets/110249038/c31fd1fb-7910-4417-ad96-31b4dea80bdd">
+![screen_pic](https://github.com/SYNCRAFT-GITHUB/SyncraftInstallerForCura-MacOS/assets/110249038/796e34b6-76d3-40be-b342-8aaa284be145)
+
+<img width="1440" alt="cura" src="https://github.com/SYNCRAFT-GITHUB/SyncraftInstallerForCura-MacOS/assets/110249038/9a104358-d7f5-4d4e-bb36-fbdeb22f656f">
