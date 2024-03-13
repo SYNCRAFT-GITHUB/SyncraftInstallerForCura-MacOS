@@ -11,6 +11,7 @@ struct ContentView: View {
     }
     
     @State var curaVersions: [Version] = [
+        Version(name: "5.7.X", path: "5.7", stable: false),
         Version(name: "5.6.X", path: "5.6", stable: false),
         Version(name: "5.5.X", path: "5.5", stable: true),
         Version(name: "4.13.X", path: "4.13", stable: true)
@@ -73,7 +74,7 @@ struct ContentView: View {
                         Text(version.stable ? "stable" : "unstable")
                             .foregroundStyle(version.stable ? Color.green : Color.yellow)
                         Spacer()
-                            .frame(width: 10)
+                            .frame(width: 8)
                     }
                     .background(
                         version.stable ? Color.green.opacity(0.4).blur(radius: 17.0)
@@ -100,6 +101,20 @@ struct ContentView: View {
                         .font(.system(size: 12))
                 }
                 
+                Spacer()
+                    .frame(height: 16)
+                
+                Button(action: {
+                    let result = openFolder(selectedVersion.path)
+                    if (result != nil) {
+                        alertMessages.message = result!
+                        alertMessages.triggerAlert.toggle()
+                    }
+                }) {
+                    Text ("openfolder")
+                        .font(.system(size: 12))
+                }
+                
                 Group {
                     
                     Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.5.0/UltiMaker-Cura-5.5.0-macos-ARM64.dmg")!)
@@ -112,7 +127,7 @@ struct ContentView: View {
                 .foregroundColor(.cyan)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 18)
                 
                 .alert(alertMessages.message, isPresented: $alertMessages.triggerAlert) {
                     Button("OK", role: .cancel) {

@@ -6,6 +6,8 @@
 
 "subtitle" = "Cura 用 Syncraft ファイル インストーラー";
 
+"openfolder" = "フォルダを開く";
+
 "downloadCuraAppleSilicon" = "公式サイトからCura 5.5をダウンロード (Apple Silicon)";
 
 "downloadCuraIntel" = "公式サイトからCura 5.5をダウンロード (Intel)";

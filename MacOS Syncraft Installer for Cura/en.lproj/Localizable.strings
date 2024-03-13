@@ -6,6 +6,8 @@
 
 "subtitle" = "Syncraft file installer for Ultimaker Cura";
 
+"openfolder" = "Open Finder at Path";
+
 "downloadCuraAppleSilicon" = "Download Cura 5.5 from the official GitHub page (Apple Silicon)";
 
 "downloadCuraIntel" = "Download Cura 5.5 from the official GitHub page (Intel)";

@@ -6,6 +6,8 @@
 
 "subtitle" = "Syncraft-Dateiinstallationsprogramm für Cura";
 
+"openfolder" = "Verzeichnis öffnen";
+
 "downloadCuraAppleSilicon" = "Laden Sie Cura 5.5 herunter (Apple Silicon)";
 
 "downloadCuraIntel" = "Laden Sie Cura 5.5 herunter (Intel)";

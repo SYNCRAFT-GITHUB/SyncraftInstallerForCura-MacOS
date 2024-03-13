@@ -57,6 +57,24 @@ func downloadAndUnzip(from url: URL, to destinationURL: URL, completion: @escapi
     task.resume()
 }
 
+func openFolder (_ version: String) -> LocalizedStringKey? {
+    
+    let manager = FileManager.default
+    let documentsDirectory = manager.urls(for: .documentDirectory, in: .userDomainMask).first!
+    
+    if version == "0.0" {
+        return AlertMessages.selectAVersion
+    }
+    
+    let targetPath = manager.urls(for: .libraryDirectory, in: .userDomainMask).first!
+        .appendingPathComponent("Application Support")
+        .appendingPathComponent("cura")
+        .appendingPathComponent(version)
+    
+    NSWorkspace.shared.open(targetPath)
+    return nil
+}
+
 
 func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     
@@ -105,7 +123,7 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
             return LocalizedStringKey(displayError)
         }
         
-        sleep(6)
+        sleep(3)
         
     }
     

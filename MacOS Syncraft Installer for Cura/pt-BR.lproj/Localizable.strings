@@ -6,6 +6,8 @@
 
 "subtitle" = "Instalador dos arquivos da Syncraft para o Cura";
 
+"openfolder" = "Abrir Pasta de Arquivos";
+
 "downloadCuraAppleSilicon" = "Baixar Cura 5.5 do Github oficial (Apple Silicon)";
 
 "downloadCuraIntel" = "Baixar Cura 5.5 do Github oficial (Intel)";
