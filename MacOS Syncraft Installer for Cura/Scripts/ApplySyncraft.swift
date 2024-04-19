@@ -86,7 +86,7 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
     if version == "0.0" {
         return AlertMessages.selectAVersion
     } else if version == "4.13" {
-        resourcesInstallerPath = URL(filePath: Bundle.main.bundlePath)
+        let resourcesInstallerPath = Bundle.main.bundleURL
             .appendingPathComponent("Contents")
             .appendingPathComponent("Resources")
             .appendingPathComponent("LegacyFiles")

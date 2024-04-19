@@ -8,7 +8,7 @@
 
 "openfolder" = "フォルダを開く";
 
-"downloadCuraAppleSilicon" = "公式サイトからCura 5.5をダウンロード (Apple Silicon)";
+"downloadCuraAppleSilicon" = "公式サイトからCura 5.5をダウンロード (Apple Silicon - ARM)";
 
 "downloadCuraIntel" = "公式サイトからCura 5.5をダウンロード (Intel)";
 

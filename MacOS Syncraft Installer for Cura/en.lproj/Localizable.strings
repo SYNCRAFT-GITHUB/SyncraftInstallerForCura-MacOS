@@ -8,9 +8,9 @@
 
 "openfolder" = "Open Finder at Path";
 
-"downloadCuraAppleSilicon" = "Download Cura 5.5 from the official GitHub page (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Download Cura 5.5 from GitHub (Apple Silicon)";
 
-"downloadCuraIntel" = "Download Cura 5.5 from the official GitHub page (Intel)";
+"downloadCuraIntel" = "Download Cura 5.5 from GitHub (Intel)";
 
 "enablediskperm" = "For the installer to work correctly, make sure to enable \"Full Disk Access\"\nin macOS Privacy & Security settings.";
 

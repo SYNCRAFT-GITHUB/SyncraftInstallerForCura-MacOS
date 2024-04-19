@@ -8,9 +8,9 @@
 
 "openfolder" = "Explorar Directorio";
 
-"downloadCuraAppleSilicon" = "Descarga Cura 5.5 desde el sitio web oficial (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Descarga Cura 5.5 (Apple Silicon)";
 
-"downloadCuraIntel" = "Descarga Cura 5.5 desde el sitio web oficial (Intel)";
+"downloadCuraIntel" = "Descarga Cura (Intel)";
 
 "enablediskperm" = "Para que el instalador funcione correctamente, asegúrese de habilitar \"Acceso Total al Disco\"\n en la configuración de Privacidad y seguridad de macOS.";
 

@@ -16,6 +16,8 @@
 		538EC2812AF295880013A9EF /* LegacyFiles in Resources */ = {isa = PBXBuildFile; fileRef = 538EC2802AF295880013A9EF /* LegacyFiles */; };
 		53C7CF0B2A9F974C008F840B /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CF0A2A9F974C008F840B /* AlertMessages.swift */; };
 		53D6ADF52B88CF2D00F69A68 /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 53D6ADF42B88CF2D00F69A68 /* ZipArchive */; };
+		53F84ED32BD2FAC2008C39FC /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 53F84ED22BD2FAC2008C39FC /* ZipArchive */; };
+		53F84ED52BD2FAE0008C39FC /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 53F84ED42BD2FAE0008C39FC /* ZipArchive */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D6ADF52B88CF2D00F69A68 /* ZipArchive in Frameworks */,
+				53F84ED32BD2FAC2008C39FC /* ZipArchive in Frameworks */,
+				53F84ED52BD2FAE0008C39FC /* ZipArchive in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,8 @@
 			name = "MacOS Syncraft Installer for Cura";
 			packageProductDependencies = (
 				53D6ADF42B88CF2D00F69A68 /* ZipArchive */,
+				53F84ED22BD2FAC2008C39FC /* ZipArchive */,
+				53F84ED42BD2FAE0008C39FC /* ZipArchive */,
 			);
 			productName = "MacOS Syncraft Installer for Cura";
 			productReference = 533465442A9D34240080CA30 /* MacOS Syncraft Installer for Cura.app */;
@@ -346,8 +352,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -375,8 +381,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -420,6 +426,16 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		53D6ADF42B88CF2D00F69A68 /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53D6ADF32B88CF2D00F69A68 /* XCRemoteSwiftPackageReference "ZipArchive" */;
+			productName = ZipArchive;
+		};
+		53F84ED22BD2FAC2008C39FC /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53D6ADF32B88CF2D00F69A68 /* XCRemoteSwiftPackageReference "ZipArchive" */;
+			productName = ZipArchive;
+		};
+		53F84ED42BD2FAE0008C39FC /* ZipArchive */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 53D6ADF32B88CF2D00F69A68 /* XCRemoteSwiftPackageReference "ZipArchive" */;
 			productName = ZipArchive;

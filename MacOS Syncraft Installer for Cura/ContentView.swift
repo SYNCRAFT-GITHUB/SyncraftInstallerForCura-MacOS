@@ -35,7 +35,7 @@ struct ContentView: View {
     
     func optionColor (_ version: String) -> Color {
         if selectedVersion.name == version {
-            return .indigo
+            return .black
         } else {
             return .white
         }
@@ -44,9 +44,13 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            
-            Rectangle()
-                .fill(Color("background").gradient)
+            LinearGradient (
+                gradient: Gradient(
+                    colors: [Color("background"),
+                             Color("bluedark")]),
+                startPoint: .top,
+                endPoint: .bottom )
+                .ignoresSafeArea()
             
             showAppVersion()
             
