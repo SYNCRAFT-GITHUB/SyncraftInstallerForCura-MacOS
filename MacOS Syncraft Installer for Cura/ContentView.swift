@@ -11,8 +11,8 @@ struct ContentView: View {
     }
     
     @State var curaVersions: [Version] = [
-        Version(name: "5.7.X", path: "5.7", stable: false),
-        Version(name: "5.6.X", path: "5.6", stable: false),
+        Version(name: "5.7.X", path: "5.7", stable: true),
+        Version(name: "5.6.X", path: "5.6", stable: true),
         Version(name: "5.5.X", path: "5.5", stable: true),
         Version(name: "4.13.X", path: "4.13", stable: true)
     ]
@@ -121,10 +121,10 @@ struct ContentView: View {
                 
                 Group {
                     
-                    Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.5.0/UltiMaker-Cura-5.5.0-macos-ARM64.dmg")!)
+                    Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.1/UltiMaker-Cura-5.7.1-macos-ARM64.dmg")!)
                         .padding(.top)
                     
-                    Link("downloadCuraIntel", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.5.0/UltiMaker-Cura-5.5.0-macos-X64.dmg")!)
+                    Link("downloadCuraIntel", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.1/UltiMaker-Cura-5.7.1-macos-X64.dmg")!)
                     
                 }
                 .font(.system(size: 14))

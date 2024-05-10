@@ -8,9 +8,9 @@
 
 "openfolder" = "Verzeichnis öffnen";
 
-"downloadCuraAppleSilicon" = "Laden Sie Cura 5.5 herunter (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Laden Sie Cura 5.7.1 herunter (Apple Silicon)";
 
-"downloadCuraIntel" = "Laden Sie Cura 5.5 herunter (Intel)";
+"downloadCuraIntel" = "Laden Sie Cura 5.7.1 herunter (Intel)";
 
 "enablediskperm" = "Damit das Installationsprogramm ordnungsgemäß funktioniert, stellen Sie sicher, dass in den Datenschutz- und Sicherheitseinstellungen von macOS der vollständige Festplattenzugriff aktiviert ist.";
 
