@@ -20,28 +20,28 @@ func downloadAndUnzip(from url: URL, to destinationURL: URL, completion: @escapi
     } catch {
         print("Impossible to create: \(newLocation)")
     }
-
+    
     let task = URLSession.shared.downloadTask(with: url) { (tempLocalUrl, response, error) in
         
         if let error = error {
             completion(error)
             return
         }
-
+        
         guard let tempLocalUrl = tempLocalUrl else {
             completion(NSError(domain: "Download Error", code: 0, userInfo: [NSLocalizedDescriptionKey: "Temporary file URL is nil."]))
             return
         }
-
+        
         do {
             let zipLocation = newLocation
                 .appendingPathComponent("files.zip")
             
             try fileManager.moveItem(at: tempLocalUrl, to: zipLocation)
-
+            
             if fileManager.fileExists(atPath: zipLocation.path) {
                 let success = SSZipArchive.unzipFile(atPath: zipLocation.path, toDestination: newLocation.path)
-
+                
                 if success {
                     completion(nil)
                 } else {
@@ -76,22 +76,22 @@ func openFolder (_ version: String) -> LocalizedStringKey? {
 }
 
 
-func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
+func applySyncraft (_ v: String, remove: Bool, _ customVersionPath: String) -> LocalizedStringKey? {
     
     let manager = FileManager.default
     let documentsDirectory = manager.urls(for: .documentDirectory, in: .userDomainMask).first!
     var resourcesInstallerPath: URL = documentsDirectory
-    var online: Bool = false
+    var version = "0.0"
+    
+    if (customVersionPath != "0.0") {
+        version = customVersionPath
+    } else {
+        version = v
+    }
     
     if version == "0.0" {
         return AlertMessages.selectAVersion
-    } else if version == "4.13" {
-        let resourcesInstallerPath = Bundle.main.bundleURL
-            .appendingPathComponent("Contents")
-            .appendingPathComponent("Resources")
-            .appendingPathComponent("LegacyFiles")
     } else {
-        online = true
         resourcesInstallerPath = documentsDirectory
             .appendingPathComponent("Cura-SyncraftFiles")
     }
@@ -105,27 +105,24 @@ func applySyncraft (_ version: String, remove: Bool) -> LocalizedStringKey? {
         return AlertMessages.folderNotFound
     }
     
-    if online {
-        var displayError: String = ""
-        var downloadFail: Bool = false
-        let downloadURL = URL(string: "https://github.com/SYNCRAFT-GITHUB/CuraFiles/releases/latest/download/files.zip")!
-        downloadAndUnzip(from: downloadURL, to: documentsDirectory) { error in
-            if let error = error {
-                print("Error: \(error)")
-                displayError = error.localizedDescription
-                downloadFail.toggle()
-            } else {
-                print("Download + unzip OK!")
-            }
+    var displayError: String = ""
+    var downloadFail: Bool = false
+    let downloadURL = URL(string: "https://github.com/SYNCRAFT-GITHUB/CuraFiles/releases/latest/download/files.zip")!
+    downloadAndUnzip(from: downloadURL, to: documentsDirectory) { error in
+        if let error = error {
+            print("Error: \(error)")
+            displayError = error.localizedDescription
+            downloadFail.toggle()
+        } else {
+            print("Download + unzip OK!")
         }
-        
-        if downloadFail {
-            return LocalizedStringKey(displayError)
-        }
-        
-        sleep(3)
-        
     }
+    
+    if downloadFail {
+        return LocalizedStringKey(displayError)
+    }
+    
+    sleep(3)
     
     do {
         for folder in try manager.contentsOfDirectory(at: resourcesInstallerPath, includingPropertiesForKeys: []) {

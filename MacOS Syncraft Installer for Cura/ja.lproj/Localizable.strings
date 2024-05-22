@@ -32,6 +32,8 @@
 
 "version" = "バージョン";
 
+"custom" = "他の";
+
 "installproblem" = "インストールに問題がありました。";
 
 "removeproblem" = "問題が発生しましたか? 問題が解決されました。";

@@ -1,26 +1,41 @@
-/* 
-  Localizable.strings
-  MacOS Syncraft Installer for Cura
+"title" = "Installatore Syncraft per Cura";
 
-  Created by Rafael Neuwirth Swierczynski on 30/08/23.
-  
-*/
+"stable" = "Stabile";
 
-English
-"title" = "Programma di installazione Syncraft per Cura";
+"unstable" = "Instabile";
 
-"subtitle" = "Syncraft file installer for Ultimaker Cura";
+"subtitle" = "Programma di installazione Syncraft per Cura";
 
-"enablediskperm" = "For the installer to work correctly, make sure to enable \"Full Disk Access\" in macOS Privacy & Security settings.";
+"openfolder" = "Apri Finder nella Directory";
 
-"chooseversion" = "Choose a Cura Version";
+"downloadCuraAppleSilicon" = "Scarica Cura 5.7.1 (Apple Silicon)";
 
-"install" = "Install Syncraft files on Cura";
+"downloadCuraIntel" = "Scarica Cura 5.7.1 (Processori Intel)";
 
-"foldernotfound" = "The Install Location for Ultimaker Cura was not found, please check that you have selected the correct version, or that you have granted disk access permissions to the program.";
+"enablediskperm" = "Per il corretto funzionamento dell'installatore, attiva \"Accesso Completo al Disco\"\n nelle impostazioni di Privacy e Sicurezza del macOS.";
 
-"pleaseselectversion" = "Please select a version to which you want to apply the files.";
+"ifpermgranted" = "Se il sistema ha già richiesto l'accesso amministratore per aprire il programma,\n abilitare \"Accesso Completo al Disco\" non è necessario.";
 
-"syncraftwebsite" = "Syncraft Website";
+"requiresweb" = "L'installazione richiede accesso a Internet.";
 
-"version" = "Version";
+"chooseversion" = "Scegli la versione di Cura";
+
+"install" = "Installare";
+
+"remove" = "Disinstallare";
+
+"foldernotfound" = "La directory Cura non è stata trovata. Verifica di aver selezionato la versione corretta o di aver concesso le corrette autorizzazioni di \"Accesso Completo al Disco\" per il programma.";
+
+"pleaseselectversion" = "Seleziona una versione valida.";
+
+"syncraftwebsite" = "Sito di Syncraft";
+
+"version" = "Versione";
+
+"custom" = "Altro";
+
+"installproblem" = "Si è verificato un problema durante l'installazione dei file.";
+
+"removeproblem" = "Si è verificato un problema durante la rimozione dei file.";
+
+"done" = "Successo";

@@ -32,6 +32,8 @@
 
 "version" = "Version";
 
+"custom" = "Autre";
+
 "installproblem" = "Un problème est survenu lors de l'installation des fichiers.";
 
 "removeproblem" = "Un problème est survenu lors de la suppression des fichiers.";

@@ -32,6 +32,8 @@
 
 "version" = "Wersja";
 
+"custom" = "Inny";
+
 "installproblem" = "Wystąpił problem z instalacją.";
 
 "removeproblem" = "Wystąpił problem podczas odinstalowywania plików.";

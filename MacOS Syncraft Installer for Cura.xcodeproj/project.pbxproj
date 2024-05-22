@@ -13,7 +13,6 @@
 		5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5334654E2A9D34250080CA30 /* Preview Assets.xcassets */; };
 		533465652A9D360D0080CA30 /* ApplySyncraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533465642A9D360D0080CA30 /* ApplySyncraft.swift */; };
 		538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538873E72A9FB1A8009A8CCB /* Localizable.strings */; };
-		538EC2812AF295880013A9EF /* LegacyFiles in Resources */ = {isa = PBXBuildFile; fileRef = 538EC2802AF295880013A9EF /* LegacyFiles */; };
 		53C7CF0B2A9F974C008F840B /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CF0A2A9F974C008F840B /* AlertMessages.swift */; };
 		53D6ADF52B88CF2D00F69A68 /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 53D6ADF42B88CF2D00F69A68 /* ZipArchive */; };
 		53F84ED32BD2FAC2008C39FC /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 53F84ED22BD2FAC2008C39FC /* ZipArchive */; };
@@ -28,6 +27,7 @@
 		5334654E2A9D34250080CA30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		533465502A9D34250080CA30 /* MacOS_Syncraft_Installer_for_Cura.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_Syncraft_Installer_for_Cura.entitlements; sourceTree = "<group>"; };
 		533465642A9D360D0080CA30 /* ApplySyncraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySyncraft.swift; sourceTree = "<group>"; };
+		533EC9742BFE28C7006844E4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		53874E8D2B9B97CA001632C2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873E62A9FB1A8009A8CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873E92A9FB1ED009A8CCB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -35,7 +35,6 @@
 		538873EB2A9FB583009A8CCB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; wrapsLines = 0; };
 		538873EC2A9FB5F2009A8CCB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		538873ED2A9FB662009A8CCB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		538EC2802AF295880013A9EF /* LegacyFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LegacyFiles; sourceTree = "<group>"; };
 		53C7CF0A2A9F974C008F840B /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 		53D6ADF72B88D53000F69A68 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +72,6 @@
 		533465462A9D34240080CA30 /* MacOS Syncraft Installer for Cura */ = {
 			isa = PBXGroup;
 			children = (
-				538EC2802AF295880013A9EF /* LegacyFiles */,
 				533465472A9D34240080CA30 /* MacOS_Syncraft_Installer_for_CuraApp.swift */,
 				533465492A9D34240080CA30 /* ContentView.swift */,
 				53C7CF0A2A9F974C008F840B /* AlertMessages.swift */,
@@ -156,6 +154,7 @@
 				pl,
 				"zh-Hans",
 				fr,
+				it,
 			);
 			mainGroup = 5334653B2A9D34240080CA30;
 			packageReferences = (
@@ -176,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5334654F2A9D34250080CA30 /* Preview Assets.xcassets in Resources */,
-				538EC2812AF295880013A9EF /* LegacyFiles in Resources */,
 				538873E52A9FB1A8009A8CCB /* Localizable.strings in Resources */,
 				5334654C2A9D34250080CA30 /* Assets.xcassets in Resources */,
 			);
@@ -210,6 +208,7 @@
 				538873ED2A9FB662009A8CCB /* pl */,
 				53D6ADF72B88D53000F69A68 /* zh-Hans */,
 				53874E8D2B9B97CA001632C2 /* fr */,
+				533EC9742BFE28C7006844E4 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -353,7 +352,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -382,7 +381,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Syncraft.MacOS-Syncraft-Installer-for-Cura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

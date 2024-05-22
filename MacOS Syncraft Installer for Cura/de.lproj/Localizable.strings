@@ -32,6 +32,8 @@
 
 "version" = "Ausführung";
 
+"custom" = "Andere";
+
 "installproblem" = "Bei der Installation ist ein Problem aufgetreten.";
 
 "removeproblem" = "Es liegt ein Problem bei der Deinstallation der Dateien vor.";

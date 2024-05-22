@@ -32,6 +32,8 @@
 
 "version" = "Versão";
 
+"custom" = "Customiz.";
+
 "installproblem" = "Ocorreu um problema ao instalar os arquivos.";
 
 "removeproblem" = "Ocorreu um problema ao remover os arquivos.";

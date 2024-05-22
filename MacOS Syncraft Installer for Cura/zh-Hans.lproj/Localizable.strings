@@ -32,6 +32,8 @@
 
 "version" = "版本";
 
+"custom" = "定制";
+
 "installproblem" = "安装时出现问题。";
 
 "removeproblem" = "卸载文件时出现问题。";
