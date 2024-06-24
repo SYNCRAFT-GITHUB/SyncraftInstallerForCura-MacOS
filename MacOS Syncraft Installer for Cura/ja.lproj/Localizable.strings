@@ -8,9 +8,9 @@
 
 "openfolder" = "フォルダを開く";
 
-"downloadCuraAppleSilicon" = "公式サイトからCura 5.7.1をダウンロード (Apple Silicon - ARM)";
+"downloadCuraAppleSilicon" = "スライサー ソフトウェアのダウンロード (Apple Silicon)";
 
-"downloadCuraIntel" = "公式サイトからCura 5.7.1をダウンロード (Intel)";
+"downloadCuraIntel" = "スライサー ソフトウェアのダウンロード (Intel)";
 
 "enablediskperm" = "インストーラーが正しく動作するには、[プライバシーとセキュリティ]\n設定でフル ディスク アクセスを必ず有効にしてください。";
 

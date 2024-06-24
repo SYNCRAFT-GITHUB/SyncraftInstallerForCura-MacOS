@@ -4,6 +4,7 @@ struct ContentView: View {
     
     @ObservedObject var alertMessages = AlertMessages()
     @State var customVersion: [Int?] = [nil, nil]
+    @State var showCustomVersion: Bool = false
     
     struct Version: Hashable {
         let name: String
@@ -109,14 +110,20 @@ struct ContentView: View {
                 // CUSTOM VERSION
                 HStack {
                     HStack{
-                        HStack {
-                            TextField("?", value: $customVersion[0], format: .number)
-                            TextField("?", value: $customVersion[1], format: .number)
-                        }
-                        .textFieldStyle(.roundedBorder)
-                        .frame(width: 110)
-                        .onChange(of: customVersion) { _ in
-                            resetSelectedVersion()
+                        if showCustomVersion {
+                            HStack {
+                                TextField("?", value: $customVersion[0], format: .number)
+                                TextField("?", value: $customVersion[1], format: .number)
+                            }
+                            .textFieldStyle(.roundedBorder)
+                            .frame(width: 110)
+                            .onChange(of: customVersion) { _ in
+                                resetSelectedVersion()
+                            }
+                        } else {
+                            Button (action: {showCustomVersion = true}) {
+                                Text ("＊")
+                            }
                         }
                     }
                     Spacer()
@@ -165,10 +172,10 @@ struct ContentView: View {
                 
                 Group {
                     
-                    Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.1/UltiMaker-Cura-5.7.1-macos-ARM64.dmg")!)
+                    Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.2-RC2/UltiMaker-Cura-5.7.2-macos-ARM64.dmg")!)
                         .padding(.top)
                     
-                    Link("downloadCuraIntel", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.1/UltiMaker-Cura-5.7.1-macos-X64.dmg")!)
+                    Link("downloadCuraIntel", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.2-RC2/UltiMaker-Cura-5.7.2-macos-X64.dmg")!)
                     
                 }
                 .font(.system(size: 14))

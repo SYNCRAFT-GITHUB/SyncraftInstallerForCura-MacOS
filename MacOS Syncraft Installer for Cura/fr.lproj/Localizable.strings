@@ -8,9 +8,9 @@
 
 "openfolder" = "Ouvrir le Répertoire";
 
-"downloadCuraAppleSilicon" = "Télécharger Cura 5.7.1 depuis le GitHub officiel (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Télécharger Cura (Apple Silicon)";
 
-"downloadCuraIntel" = "Télécharger Cura 5.7.1 depuis le GitHub officiel (Intel)";
+"downloadCuraIntel" = "Télécharger Cura (Intel)";
 
 "enablediskperm" = "Pour que l'installateur fonctionne correctement, activez l'option \"Accès complet au disque\"\ndans les paramètres de Sécurité et confidentialité de macOS.";
 

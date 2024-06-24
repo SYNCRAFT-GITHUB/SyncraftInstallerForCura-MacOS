@@ -8,9 +8,9 @@
 
 "openfolder" = "打开文件目录";
 
-"downloadCuraAppleSilicon" = "从官网下载Cura 5.7.1 (Apple Silicon)";
+"downloadCuraAppleSilicon" = "从官网下载Cura 5.7.2 (Apple Silicon)";
 
-"downloadCuraIntel" = "从官网下载Cura 5.7.1 (Intel)";
+"downloadCuraIntel" = "从官网下载Cura 5.7.2 (Intel)";
 
 "enablediskperm" = "为了使安装程序正常工作，请确保在macOS隐私与安全设置中启用\"完全磁盘访问\"。";
 

@@ -8,9 +8,9 @@
 
 "openfolder" = "Apri Finder nella Directory";
 
-"downloadCuraAppleSilicon" = "Scarica Cura 5.7.1 (Apple Silicon)";
+"downloadCuraAppleSilicon" = "Scarica Cura 5.7.2 (Apple Silicon)";
 
-"downloadCuraIntel" = "Scarica Cura 5.7.1 (Processori Intel)";
+"downloadCuraIntel" = "Scarica Cura 5.7.2 (Processori Intel)";
 
 "enablediskperm" = "Per il corretto funzionamento dell'installatore, attiva \"Accesso Completo al Disco\"\n nelle impostazioni di Privacy e Sicurezza del macOS.";
 
