@@ -39,3 +39,11 @@
 "removeproblem" = "There was a problem while uninstalling the files.";
 
 "done" = "Done";
+
+"downloadlastcurarelease" = "Page to download the latest Cura version";
+
+"downloadlastcurareleasetip" = "Open your browser to the Github page for the latest available version of Cura. Don't forget to choose the correct version to download. If you are using a Mac with an Intel processor, download the item that contains \"X64\", and if you are using a Mac with Apple Silicon, download the item that contains \"ARM64\". Remember that MacOS installers always end with the \".dmg\" extension.";
+
+"openfindertip" = "Open Finder on the Cura folder, if it exists. It makes it easier for you to make any manual changes to the files if you think it is necessary.";
+
+"customtip" = "Allows you to install Syncraft Files on versions of Cura that are not listed above. For example, if you want to install to Cura version 6.5.4, you enter \"6\" and \"5\". It is not guaranteed that plugins will work correctly.";

@@ -1,4 +1,4 @@
-"title" = "Installateur de Syncraft pour Cura";
+"title" = "Installateur Syncraft";
 
 "stable" = "Stable";
 
@@ -6,7 +6,7 @@
 
 "subtitle" = "Installateur des fichiers Syncraft pour Cura";
 
-"openfolder" = "Ouvrir le Répertoire";
+"openfolder" = "Inspecter les fichiers";
 
 "downloadCuraAppleSilicon" = "Télécharger Cura (Apple Silicon)";
 
@@ -20,9 +20,9 @@
 
 "chooseversion" = "Choisissez la version de Cura";
 
-"install" = "Installer des fichiers dans Cura";
+"install" = "Installer";
 
-"remove" = "Supprimer les fichiers de Syncraft";
+"remove" = "Désinstaller";
 
 "foldernotfound" = "L'emplacement d'Ultimaker Cura n'a pas été trouvé. Vérifiez si vous avez sélectionné la bonne version ou si vous avez accordé les autorisations appropriées pour \"Accès complet au disque\" pour le programme.";
 
@@ -39,3 +39,11 @@
 "removeproblem" = "Un problème est survenu lors de la suppression des fichiers.";
 
 "done" = "Terminé";
+
+"downloadlastcurarelease" = "Dernière version de Slicer";
+
+"downloadlastcurareleasetip" = "Ouvre la page GitHub pour télécharger la dernière version de Cura. N'oubliez pas de choisir la bonne version à télécharger. Si vous utilisez un Mac avec processeur Intel, téléchargez l'élément contenant \"X64\", et si vous utilisez un Mac avec Apple Silicon, téléchargez l'élément contenant \"ARM64\". Rappelez-vous que les installateurs MacOS se terminent toujours par l'extension \".dmg\".";
+
+"openfindertip" = "Ouvrez l'explorateur de fichiers dans le dossier Cura, si celui-ci existe. Cela facilite les modifications manuelles des fichiers, si nécessaire.";
+
+"customtip" = "Permet d'installer les fichiers Syncraft sur des versions de Cura non listées ci-dessus. Par exemple, si vous souhaitez installer la version 6.5.4, tapez \"6\" et \"5\". Cependant, il n'est pas garanti que les fichiers fonctionnent correctement.";

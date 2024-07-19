@@ -1,10 +1,10 @@
-"title" = "Instalator Syncraft dla Cura";
+"title" = "Instalator Syncrafta";
 
 "stable" = "Stabilny";
 
 "unstable" = "Niestabilny";
 
-"subtitle" = "Instalator plików Syncraft dla Cura";
+"subtitle" = "Dedykowany instalator Syncraft";
 
 "openfolder" = "Otwórz katalog plików";
 
@@ -39,3 +39,11 @@
 "removeproblem" = "Wystąpił problem podczas odinstalowywania plików.";
 
 "done" = "Zrobione";
+
+"downloadlastcurarelease" = "Najnowsza wersja Slicera";
+
+"downloadlastcurareleasetip" = "Otwiera stronę GitHub, aby pobrać najnowszą wersję Cura. Nie zapomnij wybrać właściwej wersji do pobrania. Jeśli używasz Maca z procesorem Intel, pobierz element zawierający \"X64\", a jeśli używasz Maca z Apple Silicon, pobierz element zawierający \"ARM64\". Pamiętaj, że instalatory MacOS zawsze kończą się rozszerzeniem \".dmg\".";
+
+"openfindertip" = "Otwórz eksplorator plików w folderze Cura, jeśli istnieje. To ułatwia ręczne zmiany w plikach, jeśli jest to konieczne.";
+
+"customtip" = "Pozwala na instalację plików Syncraft na wersjach Cura, które nie są wymienione powyżej. Na przykład, jeśli chcesz zainstalować wersję 6.5.4, wpisz \"6\" i \"5\". Jednak nie gwarantuje się, że pliki będą działać poprawnie.";

@@ -1,12 +1,12 @@
-"title" = "Installatore Syncraft per Cura";
+"title" = "Installatore";
 
 "stable" = "Stabile";
 
 "unstable" = "Instabile";
 
-"subtitle" = "Programma di installazione Syncraft per Cura";
+"subtitle" = "Installazione dedicato Syncraft";
 
-"openfolder" = "Apri Finder nella Directory";
+"openfolder" = "Esplora file";
 
 "downloadCuraAppleSilicon" = "Scarica Cura 5.7.2 (Apple Silicon)";
 
@@ -39,3 +39,11 @@
 "removeproblem" = "Si è verificato un problema durante la rimozione dei file.";
 
 "done" = "Successo";
+
+"downloadlastcurarelease" = "Ultima versione di Slicer";
+
+"downloadlastcurareleasetip" = "Apre la pagina GitHub per scaricare l'ultima versione di Cura. Non dimenticare di scegliere la versione corretta per il download. Se stai usando un Mac con processore Intel, scarica l'elemento che contiene \"X64\", e se stai usando un Mac con Apple Silicon, scarica l'elemento che contiene \"ARM64\". Ricorda che gli installatori MacOS terminano sempre con l'estensione \".dmg\".";
+
+"openfindertip" = "Apri l'esploratore di file nella cartella Cura, se esiste. Questo rende più facile fare modifiche manuali ai file, se necessario.";
+
+"customtip" = "Permette di installare i file Syncraft su versioni di Cura non elencate sopra. Ad esempio, se si desidera installare per la versione 6.5.4, digitare \"6\" e \"5\". Tuttavia, non è garantito che i file funzionino correttamente.";

@@ -5,6 +5,9 @@ struct ContentView: View {
     @ObservedObject var alertMessages = AlertMessages()
     @State var customVersion: [Int?] = [nil, nil]
     @State var showCustomVersion: Bool = false
+    @State var helpFolder: Bool = false
+    @State var helpLink: Bool = false
+    @State var helpCustom: Bool = false
     
     struct Version: Hashable {
         let name: String
@@ -13,9 +16,8 @@ struct ContentView: View {
     }
     
     @State var curaVersions: [Version] = [
+        Version(name: "5.8.X", path: "5.8", stable: true),
         Version(name: "5.7.X", path: "5.7", stable: true),
-        Version(name: "5.6.X", path: "5.6", stable: true),
-        Version(name: "5.5.X", path: "5.5", stable: true),
     ]
     
     @State var selectedVersion = Version(name: "0.0.X", path: "0.0", stable: true)
@@ -138,6 +140,16 @@ struct ContentView: View {
                 .cornerRadius(5.0)
                 .frame(width: 220)
                 .padding(.top)
+                .onHover { hover in
+                    helpCustom = hover
+                }
+                .overlay(
+                    Group {
+                        if helpCustom {
+                            ToolTip(l_t: "customtip", he: 180, offset_y: -20)
+                        }
+                    }
+                )
                 
                 Button(action: {
                     alertMessages.message = applySyncraft(selectedVersion.path, remove: false, customVersionPath()) ?? LocalizedStringKey("done")
@@ -169,13 +181,32 @@ struct ContentView: View {
                     Text ("openfolder")
                         .font(.system(size: 12))
                 }
+                .onHover { hover in
+                    helpFolder = hover
+                }
+                .overlay(
+                    Group {
+                        if helpFolder {
+                            ToolTip(l_t: "openfindertip", he: 145)
+                        }
+                    }
+                )
+            
                 
                 Group {
                     
-                    Link("downloadCuraAppleSilicon", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.2-RC2/UltiMaker-Cura-5.7.2-macos-ARM64.dmg")!)
+                    Link("downloadlastcurarelease", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/latest")!)
                         .padding(.top)
-                    
-                    Link("downloadCuraIntel", destination: URL(string: "https://github.com/Ultimaker/Cura/releases/download/5.7.2-RC2/UltiMaker-Cura-5.7.2-macos-X64.dmg")!)
+                        .onHover { hover in
+                            helpLink = hover
+                        }
+                        .overlay(
+                            Group {
+                                if helpLink {
+                                    ToolTip(l_t: "downloadlastcurareleasetip", he: 250)
+                                }
+                            }
+                        )
                     
                 }
                 .font(.system(size: 14))
@@ -192,4 +223,34 @@ struct ContentView: View {
             }
         }
     }
+}
+
+struct ToolTip: View {
+    
+    @State var l_t: String? // localized text
+    @State var he: Int?
+    @State var offset_y: Int?
+    
+    var body: some View {
+        
+        ZStack {
+            LinearGradient (
+                gradient: Gradient(
+                    colors: [Color(.gray),
+                             Color("bluedark")]),
+                startPoint: .top,
+                endPoint: .bottom )
+            .ignoresSafeArea()
+            
+            Text(LocalizedStringKey(l_t ?? "?"))
+                .padding(.all)
+                .frame(width: 250, height: CGFloat(he ?? 250))
+                .foregroundColor(.white)
+            
+        }
+        .cornerRadius(5.0)
+        .offset(x: -290.0, y: CGFloat(offset_y ?? Int(-100.0)))
+        
+    }
+    
 }

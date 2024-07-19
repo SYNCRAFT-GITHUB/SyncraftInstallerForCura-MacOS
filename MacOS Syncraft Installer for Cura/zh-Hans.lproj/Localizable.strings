@@ -1,10 +1,10 @@
-"title" = "Cura的Syncraft文件安装程序";
+"title" = "Syncraft 安装程序";
 
 "stable" = "稳定的";
 
 "unstable" = "不稳定的";
 
-"subtitle" = "Cura的Syncraft文件安装程序";
+"subtitle" = "在市场上最好的切片软件中安装参数化文件的最佳程序。";
 
 "openfolder" = "打开文件目录";
 
@@ -18,11 +18,11 @@
 
 "requiresweb" = "安装需要互联网连接。";
 
-"chooseversion" = "选择Cura版本";
+"chooseversion" = "选择您要应用的版本：";
 
-"install" = "安装Syncraft文件";
+"install" = "安装文件";
 
-"remove" = "删除Syncraft文件";
+"remove" = "删除文件";
 
 "foldernotfound" = "未找到Ultimaker Cura的位置，请检查您是否选择了正确的版本，或者是否已经授予程序磁盘访问权限。";
 
@@ -39,3 +39,11 @@
 "removeproblem" = "卸载文件时出现问题。";
 
 "done" = "完成";
+
+"downloadlastcurarelease" = "最新版本的切片器";
+
+"downloadlastcurareleasetip" = "打开GitHub页面以下载最新版本的Cura。不要忘记选择正确的版本下载。如果您使用的是Intel处理器的Mac，请下载包含“X64”的项目；如果您使用的是Apple Silicon处理器的Mac，请下载包含“ARM64”的项目。请记住，MacOS安装程序的扩展名总是以“.dmg”结尾。";
+
+"openfindertip" = "如果存在，请打开Cura文件夹中的文件资源管理器。这使得在必要时更容易手动更改文件。";
+
+"customtip" = "允许在上面未列出的Cura版本上安装Syncraft文件。例如，如果您想安装版本6.5.4，请输入“6”和“5”。但是，不能保证文件能正常工作。";

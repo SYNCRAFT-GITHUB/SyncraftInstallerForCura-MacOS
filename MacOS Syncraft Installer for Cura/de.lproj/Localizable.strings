@@ -1,12 +1,12 @@
-"title" = "Syncraft-Installationsprogramm für Cura";
+"title" = "Installateur";
 
 "stable" = "Stabil";
 
 "unstable" = "Instabil";
 
-"subtitle" = "Syncraft-Dateiinstallationsprogramm für Cura";
+"subtitle" = "Spezieller Syncraft-Installer";
 
-"openfolder" = "Verzeichnis öffnen";
+"openfolder" = "Dateien prüfen";
 
 "downloadCuraAppleSilicon" = "Laden Sie Cura 5.7.2 herunter (Apple Silicon)";
 
@@ -18,11 +18,11 @@
 
 "requiresweb" = "Die Installation erfordert eine Internetverbindung.";
 
-"chooseversion" = "Wählen Sie eine Cura-Version";
+"chooseversion" = "Version auswählen:";
 
 "install" = "Dateien installieren";
 
-"remove" = "Entfernen Sie die Dateien";
+"remove" = "Alles entfernen";
 
 "foldernotfound" = "Der Installationsort für Ultimaker Cura wurde nicht gefunden. Bitte überprüfen Sie, ob Sie die richtige Version ausgewählt haben oder dem Programm Festplattenzugriffsberechtigungen erteilt haben.";
 
@@ -39,3 +39,11 @@
 "removeproblem" = "Es liegt ein Problem bei der Deinstallation der Dateien vor.";
 
 "done" = "Erledigt";
+
+"downloadlastcurarelease" = "Neueste Version von Cura";
+
+"downloadlastcurareleasetip" = "Leitet Sie zur neuesten verfügbaren Version von Cura weiter. Wenn Sie einen Mac mit einem Intel-Prozessor verwenden, laden Sie das Element herunter, das \"X64\" enthält, und wenn Sie einen Mac mit Apple Silicon verwenden, laden Sie das Element herunter, das \"ARM64\" enthält.";
+
+"openfindertip" = "Öffnen Sie den Datei-Explorer im Cura-Ordner, falls vorhanden. Dies erleichtert manuelle Änderungen an den Dateien, falls erforderlich.";
+
+"customtip" = "Ermöglicht die Installation von Syncraft-Dateien auf Cura-Versionen, die oben nicht aufgeführt sind. Wenn Sie beispielsweise Version 6.5.4 installieren möchten, geben Sie \"6\" und \"5\" ein. Es wird jedoch nicht garantiert, dass die Dateien korrekt funktionieren.";

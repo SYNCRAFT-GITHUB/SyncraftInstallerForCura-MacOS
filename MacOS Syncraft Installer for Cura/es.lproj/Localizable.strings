@@ -1,10 +1,10 @@
-"title" = "Instalador de Syncraft para Cura";
+"title" = "Instalador";
 
 "stable" = "Estable";
 
 "unstable" = "Inestable";
 
-"subtitle" = "Instalador de archivos Syncraft para Cura";
+"subtitle" = "Instalador dedicado de Syncraft";
 
 "openfolder" = "Explorar Directorio";
 
@@ -39,3 +39,11 @@
 "removeproblem" = "Ocurrió un problema al desinstalar los archivos.";
 
 "done" = "Hecho";
+
+"downloadlastcurarelease" = "Última versión de Cura";
+
+"downloadlastcurareleasetip" = "Abre la página de GitHub para descargar la última versión de Cura. Si estás utilizando un Mac con procesador Intel, descarga el elemento que contiene \"X64\", y si estás usando un Mac con Apple Silicon, descarga el elemento que contiene \"ARM64\". Recuerda que los instaladores de MacOS siempre terminan con la extensión \".dmg\".";
+
+"openfindertip" = "Abre el explorador de archivos en la carpeta Cura, si existe. Esto facilita hacer cambios manuales en los archivos, si es necesario.";
+
+"customtip" = "Permite instalar los archivos de Syncraft en versiones de Cura que no están listadas arriba. Por ejemplo, si deseas instalar para la versión 6.5.4, escribe \"6\" y \"5\". Sin embargo, no se garantiza que los archivos funcionen correctamente.";
