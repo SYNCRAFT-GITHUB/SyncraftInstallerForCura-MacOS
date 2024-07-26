@@ -47,3 +47,7 @@
 "openfindertip" = "Otwórz eksplorator plików w folderze Cura, jeśli istnieje. To ułatwia ręczne zmiany w plikach, jeśli jest to konieczne.";
 
 "customtip" = "Pozwala na instalację plików Syncraft na wersjach Cura, które nie są wymienione powyżej. Na przykład, jeśli chcesz zainstalować wersję 6.5.4, wpisz \"6\" i \"5\". Jednak nie gwarantuje się, że pliki będą działać poprawnie.";
+
+"manualdownload" = "Pobierz pliki ręcznie";
+
+"manualdownloadtip" = "Otwiera przeglądarkę na stronie, w której można pobrać najnowsze dostępne pliki. Może to być przydatne, jeśli chcesz przeprowadzić instalację ręczną, gdy coś nie działa zgodnie z oczekiwaniami.";

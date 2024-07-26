@@ -42,8 +42,12 @@
 
 "downloadlastcurarelease" = "Abrir a página da última versão do Cura";
 
-"downloadlastcurareleasetip" = "Abre a página do GitHub para download da última versão do Cura. Se está utilizando um Mac com Intel, faça download do item que contém \"X64\", e se estiver usando um Mac com Apple Silicon, faça download do item que contém \"ARM64\". Os instaladores do Mac sempre terminam com a extensão \".dmg\".";
+"downloadlastcurareleasetip" = "Abre a página do GitHub para download da última versão do Cura. Se está utilizando um Mac com Intel, faça download do item que contém \"X64\", e se estiver usando um Mac com Apple Silicon, faça download do item que contém \"ARM64\". Recomendado baixar o arquivo com extensão \".dmg\".";
 
 "openfindertip" = "Abra o Finder na pasta do Cura, se existir. Isso torna mais fácil fazer alterações manuais nos arquivos, se achar necessário.";
 
 "customtip" = "Permite instalar os arquivos da Syncraft em versões do Cura que não estão listadas acima. Por exemplo, se desejar instalar para a versão 6.5.4, digite \"6\" e \"5\". Entretanto, não é garantido que tudo funcione corretamente.";
+
+"manualdownload" = "Baixar os arquivos manualmente";
+
+"manualdownloadtip" = "Abre a página para baixar os últimos arquivos disponibilizados pelo Syncraft. Pode ser útil se você quiser fazer uma instalação manual, caso algo não esteja funcionando como esperado.";

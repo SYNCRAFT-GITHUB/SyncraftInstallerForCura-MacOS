@@ -8,6 +8,7 @@ struct ContentView: View {
     @State var helpFolder: Bool = false
     @State var helpLink: Bool = false
     @State var helpCustom: Bool = false
+    @State var helpManual: Bool = false
     
     struct Version: Hashable {
         let name: String
@@ -208,12 +209,24 @@ struct ContentView: View {
                             }
                         )
                     
+                    Link("manualdownload", destination: URL(string: "https://github.com/SYNCRAFT-GITHUB/CuraFiles/releases/latest")!)
+                        .onHover { hover in
+                            helpManual = hover
+                        }
+                        .overlay(
+                            Group {
+                                if helpManual {
+                                    ToolTip(l_t: "manualdownloadtip", he: 190)
+                                }
+                            }
+                        )
+                    
                 }
                 .font(.system(size: 14))
                 .foregroundColor(.cyan)
                 
                 Spacer()
-                    .frame(height: 18)
+                    .frame(height: 20)
                 
                 .alert(alertMessages.message, isPresented: $alertMessages.triggerAlert) {
                     Button("OK", role: .cancel) {
@@ -236,7 +249,7 @@ struct ToolTip: View {
         ZStack {
             LinearGradient (
                 gradient: Gradient(
-                    colors: [Color(.gray),
+                    colors: [Color(.clear),
                              Color("bluedark")]),
                 startPoint: .top,
                 endPoint: .bottom )
